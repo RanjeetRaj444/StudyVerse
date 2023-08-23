@@ -1,8 +1,4 @@
-import {
-    GET_REQUEST,
-    GET_REQUEST_FAIL,
-    GET_REQUEST_SUCCESS,
-  } from "./actionTypes";
+import { BOOKS_GET_FAILD_ADMIN, BOOKS_GET_REQUEST_ADMIN, BOOKS_GET_SUCCESS_ADMIN } from "./actionTypes";
   
   const InitialState = {
     data: [],
@@ -12,20 +8,20 @@ import {
   
   export const reducer = (state = InitialState, { type, payload }) => {
     switch (type) {
-      case GET_REQUEST:
+      case BOOKS_GET_REQUEST_ADMIN:
         return {
           ...state,
           isLoading: true,
           isError: false,
         };
-      case GET_REQUEST_SUCCESS:
+      case BOOKS_GET_SUCCESS_ADMIN:
         return {
           ...state,
           isLoading: false,
           isError: false,
           data: payload,
         };
-      case GET_REQUEST_FAIL:
+      case BOOKS_GET_FAILD_ADMIN:
         return {
           ...state,
           isLoading: false,
