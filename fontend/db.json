@@ -1,0 +1,356 @@
+[
+    {
+        "_id": "64bcc01032b082bdf7e04007",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFR7wlD1WITOs7LprGHymy831yF4eAKrBDDh9obD5XSPgzIHjanQuF4_8ZQwDGtRN1UiI&usqp=CAU",
+        "title": "Waves and Optics",
+        "author": "David Williams",
+        "description": "Learn about the behavior of waves and the principles of optics.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Introduction to Waves",
+            "Chapter 2: Light and Reflection"
+        ],
+        "exercise": [
+            "Exercise 1: Wave Properties",
+            "Exercise 2: Snell's Law"
+        ],
+        "solution": "Solution to Exercise 1: Determine the wavelength and frequency of a wave."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e0400e",
+        "image": "https://chemistryhall.com/wp-content/uploads/2019/08/chemgen.jpg",
+        "title": "Statistical Mechanics",
+        "author": "Elizabeth Wilson",
+        "description": "Study the statistical behavior of particles in a system.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Microstates and Macrostates",
+            "Chapter 2: Entropy and Temperature"
+        ],
+        "exercise": [
+            "Exercise 1: Boltzmann Distribution",
+            "Exercise 2: Ideal Gas Law"
+        ],
+        "solution": "Solution to Exercise 1: Calculate the probability of a system being in a specific microstate."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e0400b",
+        "image": "https://m.media-amazon.com/images/I/51ndHzsUcRL.jpg",
+        "title": "Nuclear Physics",
+        "author": "Laura Martinez",
+        "description": "Study the structure and properties of atomic nuclei.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Nuclear Reactions",
+            "Chapter 2: Radioactive Decay"
+        ],
+        "exercise": [
+            "Exercise 1: Nuclear Binding Energy",
+            "Exercise 2: Half-life Calculations"
+        ],
+        "solution": "Solution to Exercise 1: Calculate the binding energy per nucleon for a given nucleus."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e0400d",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHWDbPJ7ket3rJTh3lobIRVnlbM-SH0HYbCM8icHwMlUDEc4EluOB91jYB-T6GMzD14Nw&usqp=CAU",
+        "title": "Quantum Field Theory",
+        "author": "Richard Johnson",
+        "description": "Dive into the world of quantum field theory and particle interactions.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Quantum Fields",
+            "Chapter 2: Feynman Diagrams"
+        ],
+        "exercise": [
+            "Exercise 1: Scalar Fields",
+            "Exercise 2: Electron-Photon Interaction"
+        ],
+        "solution": "Solution to Exercise 1: Describe the behavior of a scalar field in a potential."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e0400a",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5S6Z0Rjq9dOK1-nHu7sb_lvaPQsN3X5Wdtka14mZTok3f3Q5eqk_HJYX57GcghaBFljI&usqp=CAU",
+        "title": "Classical Mechanics",
+        "author": "Robert Taylor",
+        "description": "A comprehensive study of classical mechanics and its applications.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Kinematics",
+            "Chapter 2: Laws of Motion"
+        ],
+        "exercise": [
+            "Exercise 1: Projectile Motion",
+            "Exercise 2: Newton's Gravitation"
+        ],
+        "solution": "Solution to Exercise 1: Analyze the motion of a projectile in a uniform gravitational field."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04018",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdiZWhGXsarU1p2N3ffYCXYiSl6k30I9WcNQVk8Fk-F4tlceijimUq4RY758Ne23nur04&usqp=CAU",
+        "title": "Chemistry Education",
+        "author": "Elizabeth Wilson",
+        "description": "Explore innovative teaching methods in chemistry education.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Active Learning",
+            "Chapter 2: Technology in Education"
+        ],
+        "exercise": [
+            "Exercise 1: Flipped Classroom",
+            "Exercise 2: Virtual Laboratories"
+        ],
+        "solution": "Solution to Exercise 1: Describe the benefits of active learning in chemistry education."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e0400c",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnL2Um3A2R0dA6ss4oworJ2tzxUuy9geEJ9Ys85uMCGvYrsgDOZYxMTv-4b5NBn4P9mSY&usqp=CAU",
+        "title": "Astrophysics",
+        "author": "William Davis",
+        "description": "Explore the mysteries of the universe and celestial bodies.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Cosmology",
+            "Chapter 2: Stellar Evolution"
+        ],
+        "exercise": [
+            "Exercise 1: Hubble's Law",
+            "Exercise 2: HR Diagram"
+        ],
+        "solution": "Solution to Exercise 1: Calculate the recession velocity of a distant galaxy using Hubble's Law."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04011",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR29HO9iHz-BVgMi__HP5J_X_bMa4xTDmPDxRMPkQvYL-HSfYFp2kMcWY6XEuq6sQ5padc&usqp=CAU",
+        "title": "Organic Chemistry",
+        "author": "David Williams",
+        "description": "Learn about the structures and properties of organic compounds.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Hydrocarbons",
+            "Chapter 2: Functional Groups"
+        ],
+        "exercise": [
+            "Exercise 1: Naming Alkanes",
+            "Exercise 2: Reactions of Alcohols"
+        ],
+        "solution": "Solution to Exercise 1: Name a given alkane based on its structure."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04015",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtJ1PHcLs8XirQuOBGh-Y1oQ7uKRSGaNXYbSWykVXiIABcB45DO8quq_SDzrQHuprOSno&usqp=CAU",
+        "title": "Biochemistry",
+        "author": "Laura Martinez",
+        "description": "Study the chemical processes and substances in living organisms.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Biomolecules",
+            "Chapter 2: Enzymes and Metabolism"
+        ],
+        "exercise": [
+            "Exercise 1: Protein Structure",
+            "Exercise 2: Enzyme Kinetics"
+        ],
+        "solution": "Solution to Exercise 1: Describe the different levels of protein structure."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04012",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKElR7ox-CQ3XpxV8s7Zo-3nrVrqIGqeBVoHaKAHEH-MOfmDGTvHtECeGJPY7pxwwQHcM&usqp=CAU",
+        "title": "Physical Chemistry",
+        "author": "Sarah Lee",
+        "description": "Study the physical principles and properties of chemical systems.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Thermodynamics",
+            "Chapter 2: Chemical Kinetics"
+        ],
+        "exercise": [
+            "Exercise 1: Heat and Work",
+            "Exercise 2: Rate Laws"
+        ],
+        "solution": "Solution to Exercise 1: Calculate the change in internal energy of a system."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04016",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRalyulZsoRV_JIvjBrXXJi-YJ2zoesLTj4uIYmKv2StgLUjAA4Tgz6hOYV6Q19RKBdyCA&usqp=CAU",
+        "title": "Environmental Chemistry",
+        "author": "William Davis",
+        "description": "Explore the impact of chemical processes on the environment.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Pollution and Remediation",
+            "Chapter 2: Green Chemistry"
+        ],
+        "exercise": [
+            "Exercise 1: Acid Rain",
+            "Exercise 2: Sustainable Chemical Processes"
+        ],
+        "solution": "Solution to Exercise 1: Explain the causes and effects of acid rain."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04008",
+        "image": "https://m.media-amazon.com/images/I/51ndHzsUcRL.jpg",
+        "title": "Thermodynamics",
+        "author": "Sarah Lee",
+        "description": "Study the principles of heat and thermodynamic systems.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Temperature and Heat",
+            "Chapter 2: Laws of Thermodynamics"
+        ],
+        "exercise": [
+            "Exercise 1: Specific Heat Capacity",
+            "Exercise 2: Carnot Cycle"
+        ],
+        "solution": "Solution to Exercise 1: Calculate the amount of heat required to raise the temperature of a substance."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04013",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHs6QwFm9-D2ceZkbi4Zz6LgdCKMmRurnvH__jk-Dhlf4nYyAYZX0NEU1bbRMx_q0CJaI&usqp=CAU",
+        "title": "Inorganic Chemistry",
+        "author": "James Brown",
+        "description": "Explore the chemistry of inorganic compounds and materials.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Transition Metals",
+            "Chapter 2: Coordination Complexes"
+        ],
+        "exercise": [
+            "Exercise 1: Ligands and Complex Ions",
+            "Exercise 2: Crystal Field Theory"
+        ],
+        "solution": "Solution to Exercise 1: Identify the coordination number of a given complex ion."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04017",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScWio245SDA8gFkTq1Xj0RDGlnLMtLXguN9YzfJtibkZAAMu8UfLN5vlVpK4BvoGosuH0&usqp=CAU",
+        "title": "Physical Organic Chemistry",
+        "author": "Richard Johnson",
+        "description": "Combine physical principles with organic chemistry.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Reaction Mechanisms",
+            "Chapter 2: Organic Spectroscopy"
+        ],
+        "exercise": [
+            "Exercise 1: Reaction Intermediates",
+            "Exercise 2: NMR Spectroscopy"
+        ],
+        "solution": "Solution to Exercise 1: Identify the reaction intermediates in a given reaction."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04009",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8QhxT3CGhg8bcwSYmJS7MLX3DgKVcmFAvUqBNbqeHdN0ckCU4P7Ej6hXMIY4YryguCk8&usqp=CAU",
+        "title": "Modern Physics",
+        "author": "James Brown",
+        "description": "Explore the world of modern physics, including relativity and quantum mechanics.",
+        "solution_No": 1,
+        "category": "physics",
+        "chapter": [
+            "Chapter 1: Special Relativity",
+            "Chapter 2: Quantum Mechanics"
+        ],
+        "exercise": [
+            "Exercise 1: Time Dilation",
+            "Exercise 2: Wave-Particle Duality"
+        ],
+        "solution": "Solution to Exercise 1: Calculate time dilation for a moving object."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e0400f",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9PAlR3JX2EsDepo6tmiE30Iid_1sn35RGGAWWHfm6pHZL3RHiLYVbTLioFiZh-Yeeyrg&usqp=CAU",
+        "title": "Introduction to Chemistry",
+        "author": "John Johnson",
+        "description": "An introductory book to the fundamental principles of chemistry.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Matter and Energy",
+            "Chapter 2: Atoms and Elements"
+        ],
+        "exercise": [
+            "Exercise 1: States of Matter",
+            "Exercise 2: Periodic Table"
+        ],
+        "solution": "Solution to Exercise 1: Identify the states of matter and their properties."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04010",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhH0wJyeeZZSV_aC_d24aqZWwWH1G6WkIw8gee1S4U7PT1uoFMfbJo3kxNF0muQUwzXFg&usqp=CAU",
+        "title": "Chemical Reactions",
+        "author": "Mary Davis",
+        "description": "Explore the different types of chemical reactions and their applications.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Types of Reactions",
+            "Chapter 2: Balancing Equations"
+        ],
+        "exercise": [
+            "Exercise 1: Decomposition Reactions",
+            "Exercise 2: Redox Reactions"
+        ],
+        "solution": "Solution to Exercise 1: Balance a chemical equation for a decomposition reaction."
+    },
+    {
+        "_id": "64bcc01032b082bdf7e04014",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMl90G_rw1mbHbcqu6HRMquCmgwW3OPIgtAjMfmMyymxK_cshqaXCfh7ocONGevuYx87U&usqp=CAU",
+        "title": "Analytical Chemistry",
+        "author": "Robert Taylor",
+        "description": "A comprehensive study of analytical techniques and methods.",
+        "solution_No": 1,
+        "category": "Chemistry",
+        "chapter": [
+            "Chapter 1: Quantitative Analysis",
+            "Chapter 2: Spectroscopy"
+        ],
+        "exercise": [
+            "Exercise 1: Gravimetric Analysis",
+            "Exercise 2: UV-Vis Spectroscopy"
+        ],
+        "solution": "Solution to Exercise 1: Calculate the percentage of a given component in a mixture."
+    },
+    {
+        "_id": "64be39e8520376f957aa4911",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFR7wlD1WITOs7LprGHymy831yF4eAKrBDDh9obD5XSPgzIHjanQuF4_8ZQwDGtRN1UiI&usqp=CAU",
+        "title": "testing",
+        "author": "test",
+        "description": "test",
+        "chapter": [],
+        "exercise": [],
+        "__v": 0
+    },
+    {
+        "chapter": [],
+        "exercise": [],
+        "_id": "64d9f80fe058529104a23c7e",
+        "title": "my book",
+        "gnere": "Your book",
+        "author": "Kamran",
+        "publishing_year": 2021,
+        "__v": 0
+    },
+    {
+        "chapter": [],
+        "exercise": [],
+        "_id": "64da00292b72031ca668482c",
+        "title": "Hello Book",
+        "gnere": "don't know",
+        "author": "spider_man",
+        "publishing_year": 2003,
+        "__v": 0
+    }
+]
