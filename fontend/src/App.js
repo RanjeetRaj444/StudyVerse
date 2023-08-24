@@ -5,7 +5,7 @@ import { ExpereSolution } from './Parmeshwar/ExpereSolution';
 function App() {
   return (
     <div>
-      {/* <ExpereSolution /> */}
+      <ExpereSolution />
     </div>
   );
 }

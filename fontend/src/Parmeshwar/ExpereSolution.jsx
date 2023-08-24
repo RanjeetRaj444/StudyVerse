@@ -80,6 +80,9 @@ export const ExpereSolution = () => {
         <Review image={"https://quizlet.com/cdn-cgi/image/f=auto,fit=cover,h=500,onerror=redirect,w=500/https://assets.quizlet.com/_next/static/media/step-by-step-day.6c08ac80.svg"}
           heading={"Step-by-step explanations promote deeper understanding"}
           text={"Step-by-step explanations break down complex concepts into smaller, manageable pieces. This approach enables you to grasp each step of the topic thoroughly before moving on to the next, reducing the chances of confusion and promoting deeper understanding. Ultimately, you will gain a comprehensive understanding of the subject matter, leading to improved retention and recall for future exams or homework assignments."}
+          
+          appleStore={""}
+          googlePlay={""}
 
 
         />
@@ -94,6 +97,9 @@ export const ExpereSolution = () => {
 
           heading={"Millions of solutions and counting"}
           text={"With millions of verified textbook solutions from 14,000 popular textbooks, you can rest assured that our expansive solution library can support you in all of your toughest classes. Our solutions are carefully crafted by expert educators to provide you with accurate and comprehensive support. With our ever-growing library, you can tackle any academic challenge, whether youre stumped on your or need step-by-step guidance for solving a complex calculus problem.From high school to college and beyond, our textbook solutions have you covered throughout your educational journey."}
+
+          appleStore={""}
+          googlePlay={""}
         />
       </div>
 
@@ -110,6 +116,21 @@ export const ExpereSolution = () => {
         </Text>
 
         <Faqs />
+      </div>
+
+      <div style={{ width: "80%", margin: "auto" }}>
+        <Review
+        image={"https://quizlet.com/cdn-cgi/image/f=auto,fit=cover,h=500,onerror=redirect,w=500/https://assets.quizlet.com/_next/static/media/mobile-callout@2x.a08a9b45.png"}
+        heading={"Study on the go"}
+        text={"Study anywhere — even offline — with our iOS and Android apps. Your progress syncs across your phone and computer."}
+
+
+        appleStore={"https://quizlet.com/_next/static/media/apple.4170bb1a.png"}
+        googlePlay={"https://quizlet.com/_next/static/media/google_play.fca45251.png"}
+
+
+         />
+
       </div>
 
     </DIV>
