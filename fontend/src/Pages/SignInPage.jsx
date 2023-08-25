@@ -19,7 +19,7 @@ import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { loginUser } from "../Redux/User_Redux/action";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../Assets/Logo3.png";
+import logo from "../assets/Logo3.png";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");

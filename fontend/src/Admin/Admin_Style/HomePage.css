@@ -118,11 +118,11 @@ body {
 	}
 
 	.menu-icon {
-		display: inline;
+		display: block;
 	}
 
 	.sidebar-title > span {
-		display: inline;
+		display: block;
 	}
 }
 /* Small <= 768px */
