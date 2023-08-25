@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-// import { ExpereSolution } from './Parmeshwar/ExpereSolution';
+// import { ExpereSolution } from './Product/ExpereSolution';
 import SignIn from './Pages/SignInPage';
 import SignUp from './Pages/SignUpPage';
 // import Navbar from "./Admin/Pages/Navbar";
