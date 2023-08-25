@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel, TabIndicator } from '@chakra-ui/react'
-import { Box, Image } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react'
 import styled from "styled-components"
 

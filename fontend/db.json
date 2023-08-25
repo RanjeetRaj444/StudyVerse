@@ -9,11 +9,25 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Introduction to Waves",
-            "Chapter 2: Light and Reflection"
+            "Chapter 2: Light and Reflection",
+            "Chapter 3: Introduction to Waves",
+            "Chapter 4: Light and Reflection",
+            "Chapter 5: Introduction to Waves",
+            "Chapter 6: Light and Reflection",
+            "Chapter 7: Introduction to Waves",
+            "Chapter 8: Light and Reflection"
         ],
         "exercise": [
             "Exercise 1: Wave Properties",
-            "Exercise 2: Snell's Law"
+            "Exercise 2: Snell's Law",
+            "Exercise 3: Wave Properties",
+            "Exercise 4: Snell's Law",
+            "Exercise 5: Wave Properties",
+            "Exercise 6: Snell's Law",
+            "Exercise 7: Wave Properties",
+            "Exercise 8: Snell's Law",
+            "Exercise 9: Wave Properties",
+            "Exercise 10: Snell's Law"
         ],
         "solution": "Solution to Exercise 1: Determine the wavelength and frequency of a wave."
     },
@@ -27,11 +41,25 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Microstates and Macrostates",
-            "Chapter 2: Entropy and Temperature"
+            "Chapter 2: Entropy and Temperature",
+            "Chapter 3: Microstates and Macrostates",
+            "Chapter 4: Entropy and Temperature",
+            "Chapter 5: Microstates and Macrostates",
+            "Chapter 6: Entropy and Temperature",
+            "Chapter 7: Microstates and Macrostates",
+            "Chapter 8: Entropy and Temperature"
         ],
         "exercise": [
             "Exercise 1: Boltzmann Distribution",
-            "Exercise 2: Ideal Gas Law"
+            "Exercise 2: Ideal Gas Law",
+            "Exercise 3: Boltzmann Distribution",
+            "Exercise 4: Ideal Gas Law",
+            "Exercise 5: Boltzmann Distribution",
+            "Exercise 6: Ideal Gas Law",
+            "Exercise 7: Boltzmann Distribution",
+            "Exercise 8: Ideal Gas Law",
+            "Exercise 9: Boltzmann Distribution",
+            "Exercise 10: Ideal Gas Law"
         ],
         "solution": "Solution to Exercise 1: Calculate the probability of a system being in a specific microstate."
     },
@@ -45,11 +73,25 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Nuclear Reactions",
-            "Chapter 2: Radioactive Decay"
+            "Chapter 2: Radioactive Decay",
+            "Chapter 3: Nuclear Reactions",
+            "Chapter 4: Radioactive Decay",
+            "Chapter 5: Nuclear Reactions",
+            "Chapter 6: Radioactive Decay",
+            "Chapter 7: Nuclear Reactions",
+            "Chapter 8: Radioactive Decay"
         ],
         "exercise": [
             "Exercise 1: Nuclear Binding Energy",
-            "Exercise 2: Half-life Calculations"
+            "Exercise 2: Half-life Calculations",
+            "Exercise 3: Nuclear Binding Energy",
+            "Exercise 4: Half-life Calculations",
+            "Exercise 5: Nuclear Binding Energy",
+            "Exercise 6: Half-life Calculations",
+            "Exercise 7: Nuclear Binding Energy",
+            "Exercise 8: Half-life Calculations",
+            "Exercise 9: Nuclear Binding Energy",
+            "Exercise 10: Half-life Calculations"
         ],
         "solution": "Solution to Exercise 1: Calculate the binding energy per nucleon for a given nucleus."
     },
@@ -63,11 +105,25 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Quantum Fields",
-            "Chapter 2: Feynman Diagrams"
+            "Chapter 2: Feynman Diagrams",
+            "Chapter 3: Quantum Fields",
+            "Chapter 4: Feynman Diagrams",
+            "Chapter 5: Quantum Fields",
+            "Chapter 6: Feynman Diagrams",
+            "Chapter 7: Quantum Fields",
+            "Chapter 8: Feynman Diagrams"
         ],
         "exercise": [
             "Exercise 1: Scalar Fields",
-            "Exercise 2: Electron-Photon Interaction"
+            "Exercise 2: Electron-Photon Interaction",
+            "Exercise 3: Scalar Fields",
+            "Exercise 4: Electron-Photon Interaction",
+            "Exercise 5: Scalar Fields",
+            "Exercise 6: Electron-Photon Interaction",
+            "Exercise 7: Scalar Fields",
+            "Exercise 8: Electron-Photon Interaction",
+            "Exercise 9: Scalar Fields",
+            "Exercise 10: Electron-Photon Interaction"
         ],
         "solution": "Solution to Exercise 1: Describe the behavior of a scalar field in a potential."
     },
@@ -81,11 +137,25 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Kinematics",
-            "Chapter 2: Laws of Motion"
+            "Chapter 2: Laws of Motion",
+            "Chapter 3: Kinematics",
+            "Chapter 4: Laws of Motion",
+            "Chapter 5: Kinematics",
+            "Chapter 6: Laws of Motion",
+            "Chapter 7: Kinematics",
+            "Chapter 8: Laws of Motion"
         ],
         "exercise": [
             "Exercise 1: Projectile Motion",
-            "Exercise 2: Newton's Gravitation"
+            "Exercise 2: Newton's Gravitation",
+            "Exercise 3: Projectile Motion",
+            "Exercise 4: Newton's Gravitation",
+            "Exercise 5: Projectile Motion",
+            "Exercise 6: Newton's Gravitation",
+            "Exercise 7: Projectile Motion",
+            "Exercise 8: Newton's Gravitation",
+            "Exercise 9: Projectile Motion",
+            "Exercise 10: Newton's Gravitation"
         ],
         "solution": "Solution to Exercise 1: Analyze the motion of a projectile in a uniform gravitational field."
     },
@@ -99,11 +169,25 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Active Learning",
-            "Chapter 2: Technology in Education"
+            "Chapter 2: Technology in Education",
+            "Chapter 3: Active Learning",
+            "Chapter 4: Technology in Education",
+            "Chapter 5: Active Learning",
+            "Chapter 6: Technology in Education",
+            "Chapter 7: Active Learning",
+            "Chapter 8: Technology in Education"
         ],
         "exercise": [
             "Exercise 1: Flipped Classroom",
-            "Exercise 2: Virtual Laboratories"
+            "Exercise 2: Virtual Laboratories",
+            "Exercise 3: Flipped Classroom",
+            "Exercise 4: Virtual Laboratories",
+            "Exercise 5: Flipped Classroom",
+            "Exercise 6: Virtual Laboratories",
+            "Exercise 7: Flipped Classroom",
+            "Exercise 8: Virtual Laboratories",
+            "Exercise 9: Flipped Classroom",
+            "Exercise 10: Virtual Laboratories"
         ],
         "solution": "Solution to Exercise 1: Describe the benefits of active learning in chemistry education."
     },
@@ -117,11 +201,25 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Cosmology",
-            "Chapter 2: Stellar Evolution"
+            "Chapter 2: Stellar Evolution",
+            "Chapter 3: Cosmology",
+            "Chapter 4: Stellar Evolution",
+            "Chapter 5: Cosmology",
+            "Chapter 6: Stellar Evolution",
+            "Chapter 7: Cosmology",
+            "Chapter 8: Stellar Evolution"
         ],
         "exercise": [
             "Exercise 1: Hubble's Law",
-            "Exercise 2: HR Diagram"
+            "Exercise 2: HR Diagram",
+            "Exercise 3: Hubble's Law",
+            "Exercise 4: HR Diagram",
+            "Exercise 5: Hubble's Law",
+            "Exercise 6: HR Diagram",
+            "Exercise 7: Hubble's Law",
+            "Exercise 8: HR Diagram",
+            "Exercise 9: Hubble's Law",
+            "Exercise 10: HR Diagram"
         ],
         "solution": "Solution to Exercise 1: Calculate the recession velocity of a distant galaxy using Hubble's Law."
     },
@@ -135,11 +233,25 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Hydrocarbons",
-            "Chapter 2: Functional Groups"
+            "Chapter 2: Functional Groups",
+            "Chapter 3: Hydrocarbons",
+            "Chapter 4: Functional Groups",
+            "Chapter 5: Hydrocarbons",
+            "Chapter 6: Functional Groups",
+            "Chapter 7: Hydrocarbons",
+            "Chapter 8: Functional Groups"
         ],
         "exercise": [
             "Exercise 1: Naming Alkanes",
-            "Exercise 2: Reactions of Alcohols"
+            "Exercise 2: Reactions of Alcohols",
+            "Exercise 3: Naming Alkanes",
+            "Exercise 4: Reactions of Alcohols",
+            "Exercise 5: Naming Alkanes",
+            "Exercise 6: Reactions of Alcohols",
+            "Exercise 7: Naming Alkanes",
+            "Exercise 8: Reactions of Alcohols",
+            "Exercise 9: Naming Alkanes",
+            "Exercise 10: Reactions of Alcohols"
         ],
         "solution": "Solution to Exercise 1: Name a given alkane based on its structure."
     },
@@ -153,11 +265,25 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Biomolecules",
-            "Chapter 2: Enzymes and Metabolism"
+            "Chapter 2: Enzymes and Metabolism",
+            "Chapter 3: Biomolecules",
+            "Chapter 4: Enzymes and Metabolism",
+            "Chapter 5: Biomolecules",
+            "Chapter 6: Enzymes and Metabolism",
+            "Chapter 7: Biomolecules",
+            "Chapter 8: Enzymes and Metabolism"
         ],
         "exercise": [
             "Exercise 1: Protein Structure",
-            "Exercise 2: Enzyme Kinetics"
+            "Exercise 2: Enzyme Kinetics",
+            "Exercise 3: Protein Structure",
+            "Exercise 4: Enzyme Kinetics",
+            "Exercise 5: Protein Structure",
+            "Exercise 6: Enzyme Kinetics",
+            "Exercise 7: Protein Structure",
+            "Exercise 8: Enzyme Kinetics",
+            "Exercise 9: Protein Structure",
+            "Exercise 10: Enzyme Kinetics"
         ],
         "solution": "Solution to Exercise 1: Describe the different levels of protein structure."
     },
@@ -171,11 +297,25 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Thermodynamics",
-            "Chapter 2: Chemical Kinetics"
+            "Chapter 2: Chemical Kinetics",
+            "Chapter 3: Thermodynamics",
+            "Chapter 4: Chemical Kinetics",
+            "Chapter 5: Thermodynamics",
+            "Chapter 6: Chemical Kinetics",
+            "Chapter 7: Thermodynamics",
+            "Chapter 8: Chemical Kinetics"
         ],
         "exercise": [
             "Exercise 1: Heat and Work",
-            "Exercise 2: Rate Laws"
+            "Exercise 2: Rate Laws",
+            "Exercise 3: Heat and Work",
+            "Exercise 4: Rate Laws",
+            "Exercise 5: Heat and Work",
+            "Exercise 6: Rate Laws",
+            "Exercise 7: Heat and Work",
+            "Exercise 8: Rate Laws",
+            "Exercise 9: Heat and Work",
+            "Exercise 10: Rate Laws"
         ],
         "solution": "Solution to Exercise 1: Calculate the change in internal energy of a system."
     },
@@ -189,11 +329,17 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Pollution and Remediation",
-            "Chapter 2: Green Chemistry"
+            "Chapter 2: Green Chemistry",
+            "Chapter 3: Pollution and Remediation",
+            "Chapter 4: Green Chemistry"
         ],
         "exercise": [
             "Exercise 1: Acid Rain",
-            "Exercise 2: Sustainable Chemical Processes"
+            "Exercise 2: Sustainable Chemical Processes",
+            "Exercise 3: Acid Rain",
+            "Exercise 4: Sustainable Chemical Processes",
+            "Exercise 5: Acid Rain",
+            "Exercise 6: Sustainable Chemical Processes"
         ],
         "solution": "Solution to Exercise 1: Explain the causes and effects of acid rain."
     },
@@ -207,11 +353,17 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Temperature and Heat",
-            "Chapter 2: Laws of Thermodynamics"
+            "Chapter 2: Laws of Thermodynamics",
+            "Chapter 3: Temperature and Heat",
+            "Chapter 4: Laws of Thermodynamics"
         ],
         "exercise": [
             "Exercise 1: Specific Heat Capacity",
-            "Exercise 2: Carnot Cycle"
+            "Exercise 2: Carnot Cycle",
+            "Exercise 3: Specific Heat Capacity",
+            "Exercise 4: Carnot Cycle",
+            "Exercise 5: Specific Heat Capacity",
+            "Exercise 6: Carnot Cycle"
         ],
         "solution": "Solution to Exercise 1: Calculate the amount of heat required to raise the temperature of a substance."
     },
@@ -225,11 +377,17 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Transition Metals",
-            "Chapter 2: Coordination Complexes"
+            "Chapter 2: Coordination Complexes",
+            "Chapter 3: Transition Metals",
+            "Chapter 4: Coordination Complexes"
         ],
         "exercise": [
             "Exercise 1: Ligands and Complex Ions",
-            "Exercise 2: Crystal Field Theory"
+            "Exercise 2: Crystal Field Theory",
+            "Exercise 3: Ligands and Complex Ions",
+            "Exercise 4: Crystal Field Theory",
+            "Exercise 5: Ligands and Complex Ions",
+            "Exercise 6: Crystal Field Theory"
         ],
         "solution": "Solution to Exercise 1: Identify the coordination number of a given complex ion."
     },
@@ -243,11 +401,17 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Reaction Mechanisms",
-            "Chapter 2: Organic Spectroscopy"
+            "Chapter 2: Organic Spectroscopy",
+            "Chapter 3: Reaction Mechanisms",
+            "Chapter 4: Organic Spectroscopy"
         ],
         "exercise": [
             "Exercise 1: Reaction Intermediates",
-            "Exercise 2: NMR Spectroscopy"
+            "Exercise 2: NMR Spectroscopy",
+            "Exercise 3: Reaction Intermediates",
+            "Exercise 4: NMR Spectroscopy",
+            "Exercise 5: Reaction Intermediates",
+            "Exercise 6: NMR Spectroscopy"
         ],
         "solution": "Solution to Exercise 1: Identify the reaction intermediates in a given reaction."
     },
@@ -261,11 +425,17 @@
         "category": "physics",
         "chapter": [
             "Chapter 1: Special Relativity",
-            "Chapter 2: Quantum Mechanics"
+            "Chapter 2: Quantum Mechanics",
+            "Chapter 3: Special Relativity",
+            "Chapter 4: Quantum Mechanics"
         ],
         "exercise": [
             "Exercise 1: Time Dilation",
-            "Exercise 2: Wave-Particle Duality"
+            "Exercise 2: Wave-Particle Duality",
+            "Exercise 3: Time Dilation",
+            "Exercise 4: Wave-Particle Duality",
+            "Exercise 5: Time Dilation",
+            "Exercise 6: Wave-Particle Duality"
         ],
         "solution": "Solution to Exercise 1: Calculate time dilation for a moving object."
     },
@@ -279,11 +449,17 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Matter and Energy",
-            "Chapter 2: Atoms and Elements"
+            "Chapter 2: Atoms and Elements",
+            "Chapter 3: Matter and Energy",
+            "Chapter 4: Atoms and Elements"
         ],
         "exercise": [
             "Exercise 1: States of Matter",
-            "Exercise 2: Periodic Table"
+            "Exercise 2: Periodic Table",
+            "Exercise 3: States of Matter",
+            "Exercise 4: Periodic Table",
+            "Exercise 5: States of Matter",
+            "Exercise 6: Periodic Table"
         ],
         "solution": "Solution to Exercise 1: Identify the states of matter and their properties."
     },
@@ -297,11 +473,17 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Types of Reactions",
-            "Chapter 2: Balancing Equations"
+            "Chapter 2: Balancing Equations",
+            "Chapter 3: Types of Reactions",
+            "Chapter 4: Balancing Equations"
         ],
         "exercise": [
             "Exercise 1: Decomposition Reactions",
-            "Exercise 2: Redox Reactions"
+            "Exercise 2: Redox Reactions",
+            "Exercise 3: Decomposition Reactions",
+            "Exercise 4: Redox Reactions",
+            "Exercise 5: Decomposition Reactions",
+            "Exercise 6: Redox Reactions"
         ],
         "solution": "Solution to Exercise 1: Balance a chemical equation for a decomposition reaction."
     },
@@ -315,42 +497,20 @@
         "category": "Chemistry",
         "chapter": [
             "Chapter 1: Quantitative Analysis",
-            "Chapter 2: Spectroscopy"
+            "Chapter 2: Spectroscopy",
+            "Chapter 3: Quantitative Analysis",
+            "Chapter 4: Spectroscopy"
         ],
         "exercise": [
             "Exercise 1: Gravimetric Analysis",
-            "Exercise 2: UV-Vis Spectroscopy"
+            "Exercise 2: UV-Vis Spectroscopy",
+            "Exercise 3: Gravimetric Analysis",
+            "Exercise 4: UV-Vis Spectroscopy",
+            "Exercise 5: Gravimetric Analysis",
+            "Exercise 6: UV-Vis Spectroscopy",
+            "Exercise 7: Gravimetric Analysis",
+            "Exercise 8: UV-Vis Spectroscopy"
         ],
         "solution": "Solution to Exercise 1: Calculate the percentage of a given component in a mixture."
-    },
-    {
-        "_id": "64be39e8520376f957aa4911",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFR7wlD1WITOs7LprGHymy831yF4eAKrBDDh9obD5XSPgzIHjanQuF4_8ZQwDGtRN1UiI&usqp=CAU",
-        "title": "testing",
-        "author": "test",
-        "description": "test",
-        "chapter": [],
-        "exercise": [],
-        "__v": 0
-    },
-    {
-        "chapter": [],
-        "exercise": [],
-        "_id": "64d9f80fe058529104a23c7e",
-        "title": "my book",
-        "gnere": "Your book",
-        "author": "Kamran",
-        "publishing_year": 2021,
-        "__v": 0
-    },
-    {
-        "chapter": [],
-        "exercise": [],
-        "_id": "64da00292b72031ca668482c",
-        "title": "Hello Book",
-        "gnere": "don't know",
-        "author": "spider_man",
-        "publishing_year": 2003,
-        "__v": 0
     }
 ]
