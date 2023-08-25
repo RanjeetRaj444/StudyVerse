@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { ExpereSolution } from './Product/ExpereSolution';
-import { SingleProduct } from './Product/SingleProduct';
+// import { ExpereSolution } from './Product/ExpereSolution';
+// import { SingleProduct } from './Product/SingleProduct';
 
 
 
