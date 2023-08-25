@@ -3,8 +3,10 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, TabIndicator } from '@chakra-u
 import { Box, Image } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react'
 import styled from "styled-components"
+import { Link } from 'react-router-dom';
 
 export const BooksComponents = () => {
+  const id = 1;
   return (
     <DIV>
       <Tabs position="relative" variant="unstyled">
@@ -33,9 +35,11 @@ export const BooksComponents = () => {
                   <Image src='https://d2nchlq0f2u6vy.cloudfront.net/cache/f0/5b/f05b21063194c1b8a8c430c213bdce16.jpg' alt='Dan Abramov' />
                 </div>
 
-                <div style={{ marginLeft: '10px'}}>
+                <div style={{ marginLeft: '10px'}}>  
                   <Text fontSize={{ base: "16px" }} style={{fontWeight: 'bold'}}>
+                    <Link to={`/book/:${id}`}>
                     Chemistry: The Central Science
+                </Link>
                   </Text>
                   <Text fontSize={{ base: "13px" }}  style={{fontWeight: '500', color: '#928b8b'}}>
                     14th Edition . ISBN: 9780134414232
