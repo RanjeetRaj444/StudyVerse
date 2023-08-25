@@ -1,3 +1,4 @@
+
 import logo from "./logo.svg";
 import "./App.css";
 // import { ExpereSolution } from "./Parmeshwar/ExpereSolution";
@@ -9,11 +10,13 @@ import SignUp from "./Pages/SignUpPage";
 // import Routes from './Routes/Routes';
 
 function App() {
-	return (
-		<div>
-			{/* <ExpereSolution /> */}
-		</div>
-	);
-}
+  return (
+    <div>
+    {/* <ExpereSolution/> */}
+    </div>
+  );
+
+};
+
 
 export default App;
