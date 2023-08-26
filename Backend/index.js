@@ -6,6 +6,7 @@ const adminRouter = require("./routes/admin.routes");
 require("dotenv").config();
 const cors = require("cors");
 const bookRouter = require("./routes/books.routes");
+const {userBooksRouter} = require("./routes/userbooks")
 
 const app = express();
 app.use(cors());
@@ -15,8 +16,13 @@ app.get("/", (req, res) => {
 	res.send("Welcome to home page");
 });
 
-app.use("/admin", adminRouter);
-app.use("/user", userRouter);
+
+app.use('/subjects',userBooksRouter)
+
+app.use("/admin",adminRouter)
+app.use("/user",userRouter)
+
+
 
 app.use("/books", bookRouter);
 

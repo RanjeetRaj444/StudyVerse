@@ -1,11 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import styled from "styled-components"
 import { Text, Image } from '@chakra-ui/react'
 import { Exercise } from '../Components/Exercise'
+import axios from 'axios'
+import { useState } from 'react'
 
 
 export const SingleProduct = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [data, setData] = useState({})
+
+  const id = "64bcc01032b082bdf7e04018"
+  
+
+  const getSingleData = ()=>{
+    axios.get(`http://localhost:8080/subjects/singleBook/${id}`)
+    .then((res) => {
+      console.log(res);
+      setData(res.data)
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+  }
+
+  useEffect(()=>{
+    getSingleData()
+  }, [])
+
+  // const id = searchParams.get('id')
   return (
     <div style={{backgroundColor: "#dbdfff99"}}>
     <DIV style={{border: "2px solid red", width: "80%", margin: "auto"}}>
