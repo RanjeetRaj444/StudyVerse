@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   Button,
   Box,
@@ -33,13 +33,15 @@ const SignIn = () => {
   const handleSignIn = async () => {
     const credentials = { email, password };
     try {
-      const response = dispatch(loginUser(credentials));
-      //console.log(response);
+      const response = await dispatch(loginUser(credentials));
+      console.log(response);
 
       switch (response) {
         case "User logged in":
           toast.success("Signed in successfully");
-          navigate(pathComingFrom, { replace: true });
+          setTimeout(() => {
+            navigate(pathComingFrom, { replace: true });
+          }, 2000);
           break;
         case "Incorrect password":
           toast.error("Incorrect password");
@@ -54,6 +56,7 @@ const SignIn = () => {
       toast.error("Invalid credentials.");
     }
   };
+
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
   };
