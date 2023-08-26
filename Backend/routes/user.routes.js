@@ -36,7 +36,9 @@ userRouter.post("/login", async (req, res) => {
     const { email, password } = req.body;
     const user = await UserModel.findOne({ email });
     if (!user) {
-      return res.status(400).json({ msg: "User does not exist, please register" });
+      return res
+        .status(400)
+        .json({ msg: "User does not exist, please register" });
     } else {
       const isMatch = await bcrypt.compare(password, user.password);
       if (!isMatch) {
@@ -45,10 +47,17 @@ userRouter.post("/login", async (req, res) => {
       const token = jwt.sign({ userId: user._id }, process.env.KEY, {
         expiresIn: "7days",
       });
-      res.status(200).json({ msg: "User logged in", token });
+      res
+        .status(200)
+        .json({
+          msg: "User logged in",
+          token,
+          username: user.username,
+          email: user.email,
+        });
     }
   } catch (error) {
-    res.status(500).json({ msg: "Internal server error" });
+    res.status(500).json({ message: "Internal server error" });
   }
 });
 
