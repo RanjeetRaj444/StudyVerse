@@ -15,9 +15,6 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 				<div className="sidebar-brand">
 					<Image src={logo} alt="err" />
 				</div>
-				<span className="icon close_icon" onClick={OpenSidebar}>
-					X
-				</span>
 			</div>
 
 			<ul className="sidebar-list">
