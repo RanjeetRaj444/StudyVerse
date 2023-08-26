@@ -3,8 +3,8 @@ import React, { useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 
 export const CardComponent = ({image, title, author, description, _id}) => {
-  // const [searchParams, setSearchParams] = useSearchParams()
-  // console.log(searchParams);
+  const [searchParams, setSearchParams] = useSearchParams()
+  console.log(searchParams);
  
 
 
