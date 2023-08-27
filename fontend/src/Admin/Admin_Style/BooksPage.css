@@ -8,8 +8,17 @@
 	grid-gap: 2rem;
 }
 
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width:1100px)  {
+
 	.booksCardContainer {
 		grid-template-columns: auto auto;
 	}
 }
+
+@media screen and (max-width: 749px) {
+	.booksCardContainer {
+		grid-template-columns: auto ;
+	}
+}
+

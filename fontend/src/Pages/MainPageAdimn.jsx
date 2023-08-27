@@ -17,9 +17,9 @@ const MainPageAdimn = () => {
 				/>
 			</div>
 			<div className="bodyContainer">
-				{/* <div> */}
+
 				<Header OpenSidebar={OpenSidebar} />
-				{/* </div> */}
+
 				<MainRoutes />
 			</div>
 		</div>

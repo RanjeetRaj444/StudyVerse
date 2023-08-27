@@ -29,16 +29,17 @@ body {
 }
 
 .grid-container {
-	/* display: grid; */
-	/* grid-template-columns: 260px; */
-	/* grid-template-rows: 0.2fr 3fr; */
-	/* grid-template-areas:
-		"sidebar header header header"
-		"sidebar main main main"; */
 	height: 100vh;
 	display: flex;
 }
+.sideConatiner{
+	display: flex;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	width: 15%;
 
+}
 /* Main  */
 .main-container {
 	grid-area: main;
