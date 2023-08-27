@@ -44,12 +44,12 @@ const SignUp = () => {
     };
 
     try {
-      const response = dispatch(registerUser(userData));
+      const response = await dispatch(registerUser(userData));
       //console.log(response);
       if (response.msg === "User registered") {
         toast.success("Account created successfully");
         setTimeout(() => {
-          // navigate();
+          navigate("/signin");
         }, 2000);
       } else if (response === "User already exists, please login") {
         toast.error("Username already exists, please login");

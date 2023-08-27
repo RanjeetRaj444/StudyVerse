@@ -4,24 +4,15 @@ import {
 	BOOKS_GET_SUCCESS_ADMIN,
 } from "./actionTypes";
 
-const InitialState = {
-	data: {},
+const initialState = {
+	data: [],
 	isLoading: false,
 	isError: false,
 };
 
-export const reducer = (state = InitialState, action) => {
-	// console.log(payload);
+export const reducer = (state = initialState, action) => {
 	switch (action.type) {
-		case BOOKS_GET_FAILD_ADMIN:
-			// console.log("hhh");
-			return {
-				...state,
-				isLoading: false,
-				isError: true,
-			};
 		case BOOKS_GET_SUCCESS_ADMIN:
-			// console.log("hello");
 			return {
 				...state,
 				isLoading: false,
@@ -29,11 +20,18 @@ export const reducer = (state = InitialState, action) => {
 				data: action.payload,
 			};
 		case BOOKS_GET_REQUEST_ADMIN:
-			// console.log("hi");
+			// console.log(action.type);
 			return {
 				...state,
 				isLoading: true,
 				isError: false,
+			};
+
+		case BOOKS_GET_FAILD_ADMIN:
+			return {
+				...state,
+				isLoading: false,
+				isError: true,
 			};
 
 		default:

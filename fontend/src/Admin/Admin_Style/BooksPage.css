@@ -1,0 +1,15 @@
+.booksCardContainer {
+	/* align-items: center; */
+	display: grid;
+	grid-template-columns: auto auto auto;
+	/* justify-content: center; */
+	/* text-align: center; */
+	padding: 1rem;
+	grid-gap: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+	.booksCardContainer {
+		grid-template-columns: auto auto;
+	}
+}

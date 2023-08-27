@@ -8,12 +8,14 @@ import {
 	BsSearch,
 	BsJustify,
 } from "react-icons/bs";
+import DrawerResponsive from "./Drawer";
 
 function Header({ OpenSidebar }) {
 	return (
 		<header className="header">
 			<div className="menu-icon">
-				<BsJustify className="icon" onClick={OpenSidebar} />
+				<DrawerResponsive/>
+				{/* <BsJustify className="icon" onClick={OpenSidebar} /> */}
 			</div>
 			<div className="header-left">
 				<BsSearch className="icon" />

@@ -22,8 +22,12 @@ export const updateData = () => () => {
 	axios.patch();
 };
 
-export const deleteData = () => () => {
-	axios.delete();
+export const deleteData = (id) => (dispatch) => {
+	console.log(id);
+	axios.delete(`http://localhost:8080/books/delete/${id}`).then((data) => {
+		console.log("data is deleted.");
+		dispatch(getData())
+	});
 };
 
 export const addData = () => () => {

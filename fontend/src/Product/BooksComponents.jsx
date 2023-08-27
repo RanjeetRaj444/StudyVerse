@@ -1,24 +1,70 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel, TabIndicator } from '@chakra-ui/react'
 import { Box, Image } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react'
 import styled from "styled-components"
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
+import axios from 'axios';
+import { CardComponent } from './CardComponent';
 
 export const BooksComponents = () => {
-  const id = 1;
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  // const [category, setCategory] = useState("chemistry")
+  const initialSubjects = searchParams.get("value")
+  // console.log(initialSubjects, "+++");
+  const [data, setData] = useState([])
+
+
+  const handleSubjects = (e) => {
+    const { value } = e.target;
+    // setCategory(value)
+    const params = {
+      // category
+      value
+    }
+
+    setSearchParams(params)
+  }
+
+
+  const getCategoryData = () => {
+    axios.get(`http://localhost:8080/subjects/book?value=${initialSubjects}`)
+      .then((res) => {
+        console.log(res);
+        setData(res.data)
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+  }
+
+
+
+  useEffect(() => {
+
+    // const params = {
+    //   category
+    // }
+
+    // setSearchParams(params)
+    getCategoryData()
+
+  }, [searchParams])
+
+
   return (
     <DIV>
       <Tabs position="relative" variant="unstyled">
         <TabList>
-          <Tab>Chemistry</Tab>
-          <Tab>Calcus</Tab>
-          <Tab>Engineering</Tab>
-          <Tab>Linear Algebra</Tab>
-          <Tab>Physics</Tab>
-          <Tab>Biology</Tab>
-          <Tab>Languages</Tab>
-          <Tab>Businesses</Tab>
+          <Tab value={"Chemistry"} onClick={handleSubjects} >Chemistry</Tab>
+          <Tab value={"Calcus"} onClick={handleSubjects}>Calcus</Tab>
+          <Tab value={"Engineering"} onClick={handleSubjects}>Engineering</Tab>
+          <Tab value={"Linear Algebra"} onClick={handleSubjects}>Linear Algebra</Tab>
+          <Tab value={"physics"} onClick={handleSubjects}>Physics</Tab>
+          <Tab value={"Biology"} onClick={handleSubjects}>Biology</Tab>
+          <Tab value={"Languages"} onClick={handleSubjects}>Languages</Tab>
+          <Tab value={"Businesses"} onClick={handleSubjects}>Businesses</Tab>
         </TabList>
         <TabIndicator
           mt="-1.5px"
@@ -30,71 +76,11 @@ export const BooksComponents = () => {
           <TabPanel>
             <div className='chemistry' style={{}}>
 
-              <div style={{display: "flex", backgroundColor: "white", padding: "10px"}}>
-                <div style={{width: '30%'}}>
-                  <Image src='https://d2nchlq0f2u6vy.cloudfront.net/cache/f0/5b/f05b21063194c1b8a8c430c213bdce16.jpg' alt='Dan Abramov' />
-                </div>
-
-                <div style={{ marginLeft: '10px'}}>  
-                  <Text fontSize={{ base: "16px" }} style={{fontWeight: 'bold'}}>
-                    <Link to={`/book/:${id}`}>
-                    Chemistry: The Central Science
-                </Link>
-                  </Text>
-                  <Text fontSize={{ base: "13px" }}  style={{fontWeight: '500', color: '#928b8b'}}>
-                    14th Edition . ISBN: 9780134414232
-                  </Text>
-
-                   <Text fontSize={{ base: "13px" }}  style={{fontWeight: '500', color: '#928b8b'}}>
-                   Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lemay, Matthew E. Stoltzfus, Patrick Woodward, Theodore E. Brown
-                  </Text>
-                </div>
-              </div>
-
-
-              {/*  */}
-
-              <div style={{display: "flex"}}>
-                <div style={{width: '30%'}}>
-                  <Image src='https://d2nchlq0f2u6vy.cloudfront.net/cache/f0/5b/f05b21063194c1b8a8c430c213bdce16.jpg' alt='Dan Abramov' />
-                </div>
-
-                <div style={{marginLeft: '10px'}}>
-                  <Text fontSize={{ base: "16px" }}>
-                    Chemistry: The Central Science
-                  </Text>
-                  <Text fontSize={{ base: "16px" }}>
-                    14th Edition . ISBN: 9780134414232
-                  </Text>
-
-                   <Text fontSize={{ base: "16px" }}>
-                   Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lemay, Matthew E. Stoltzfus, Patrick Woodward, Theodore E. Brown
-                  </Text>
-                </div>
-              </div>
-
-              {/*  */}
-
-              <div style={{display: "flex"}}>
-                <div style={{width: '30%'}}>
-                  <Image src='https://d2nchlq0f2u6vy.cloudfront.net/cache/f0/5b/f05b21063194c1b8a8c430c213bdce16.jpg' alt='Dan Abramov' />
-                </div>
-
-                <div style={{marginLeft: '10px'}}>
-                  <Text fontSize={{ base: "16px" }}>
-                    Chemistry: The Central Science
-                  </Text>
-                  <Text fontSize={{ base: "16px" }}>
-                    14th Edition . ISBN: 9780134414232
-                  </Text>
-
-                   <Text fontSize={{ base: "16px" }}>
-                   Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lemay, Matthew E. Stoltzfus, Patrick Woodward, Theodore E. Brown
-                  </Text>
-                </div>
-              </div>
-
-
+              {
+                initialSubjects === "Chemistry" && data.map((ele) => (
+                  <CardComponent key={ele.id} {...ele} />
+                ))
+              }
 
             </div>
           </TabPanel>
@@ -110,7 +96,14 @@ export const BooksComponents = () => {
           </TabPanel>
 
           <TabPanel>
-            <p>Physice</p>
+            <div className='chemistry'>
+              {
+                initialSubjects === "physics" && data.map((ele) => (
+                  <CardComponent key={ele.id} {...ele} />
+                ))
+              }
+
+            </div>
           </TabPanel>
 
           <TabPanel>

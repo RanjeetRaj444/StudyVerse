@@ -10,12 +10,18 @@ const MainPageAdimn = () => {
 	};
 	return (
 		<div className="grid-container">
-			<Header OpenSidebar={OpenSidebar} />
-			<Sidebar
-				openSidebarToggle={openSidebarToggle}
-				OpenSidebar={OpenSidebar}
-			/>
-			<MainRoutes />
+			<div className="sideContainer">
+				<Sidebar
+					openSidebarToggle={openSidebarToggle}
+					OpenSidebar={OpenSidebar}
+				/>
+			</div>
+			<div className="bodyContainer">
+				{/* <div> */}
+				<Header OpenSidebar={OpenSidebar} />
+				{/* </div> */}
+				<MainRoutes />
+			</div>
 		</div>
 	);
 };
