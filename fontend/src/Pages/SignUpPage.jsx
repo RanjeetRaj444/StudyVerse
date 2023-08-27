@@ -19,7 +19,7 @@ import { useDispatch } from "react-redux";
 import { registerUser } from "../Redux/User_Redux/action";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../assets/Logo3.png";
+import logo from "../Assets/Logo3.png";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");

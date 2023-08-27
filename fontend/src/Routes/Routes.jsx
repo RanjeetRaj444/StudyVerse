@@ -5,15 +5,23 @@ import HomePage from "./../Admin/Pages/HomePage";
 import BooksPage from "./../Admin/Pages/BooksPage";
 import Users from "./../Admin/Pages/Users";
 import styled from "@emotion/styled";
+import Afterloginpage from "../Landingpage/Afterloginpage";
+import SignIn from "../Pages/SignInPage";
+import SignUp from "../Pages/SignUpPage";
+import Home1 from "../Landingpage/Home1";
+
 
 const MainRoutes = () => {
 	return (
 		<DIV>
 			<Routes>
+			
 				<Route path="/admin" element={<HomePage />} />
 				<Route path="/admin/books" element={<BooksPage />} />
 				<Route path="/admin/users" element={<Users />} />
 				<Route path="/admin/profile" element={<Users />} />
+				
+
 			</Routes>
 		</DIV>
 	);
