@@ -3,6 +3,7 @@ import "../Admin/Admin_Style/HomePage.css";
 import MainRoutes from "../Routes/Routes";
 import Header from "../Admin/components/Header";
 import Sidebar from "../Admin/components/Sidebar";
+import AdminRoutes from "../Routes/AdminRoutes";
 const MainPageAdimn = () => {
 	const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
 	const OpenSidebar = () => {
@@ -10,12 +11,20 @@ const MainPageAdimn = () => {
 	};
 	return (
 		<div className="grid-container">
-			<Header OpenSidebar={OpenSidebar} />
-			<Sidebar
-				openSidebarToggle={openSidebarToggle}
-				OpenSidebar={OpenSidebar}
-			/>
-			<MainRoutes />
+			<div className="sideContainer">
+				<Sidebar
+					openSidebarToggle={openSidebarToggle}
+					OpenSidebar={OpenSidebar}
+				/>
+			</div>
+			<div className="bodyContainer">
+
+				<Header OpenSidebar={OpenSidebar} />
+
+
+				<MainRoutes />
+
+			</div>
 		</div>
 	);
 };

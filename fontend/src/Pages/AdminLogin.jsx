@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import {
   Button,
   Box,
@@ -13,37 +13,33 @@ import {
   InputRightElement,
   Stack,
   Image,
-  Text,
 } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import { loginUser } from "../Redux/User_Redux/action";
+import logo from "../Assets/Logo3.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../Assets/Logo3.png";
 
-const SignIn = () => {
-  const [email, setEmail] = useState("");
+const AdminLogin = () => {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const location = useLocation();
-  const dispatch = useDispatch();
   const navigate = useNavigate();
-  const pathComingFrom = location.state?.from?.pathname || "/";
 
   const handleSignIn = async () => {
-    const credentials = { email, password };
     try {
-      const response = await dispatch(loginUser(credentials));
-      console.log(response);
+      const response = await axios.post("https://studyverse-drgj.onrender.com/admin/login", {
+        username,
+        password,
+      });
 
-      switch (response) {
-        case "User logged in":
+      switch (response.data.msg) {
+        case "User logedin":
           toast.success("Signed in successfully");
           setTimeout(() => {
-            navigate(pathComingFrom, { replace: true });
+            navigate("/mainAdmin");
           }, 2000);
           break;
-        case "Incorrect password":
+        case "Inccorect password":
           toast.error("Incorrect password");
           break;
         case "User does not exist, please register":
@@ -64,38 +60,32 @@ const SignIn = () => {
   return (
     <>
       <ToastContainer />
-      <Flex minH={"100vh"} align={"center"} justify={"center"} bg={"gray.100"}>
-        <Box
-          w={"80%"}
-          bg={"white"}
-          rounded={"lg"}
-          boxShadow={"lg"}
-          p={8}
-          mx={4}
-          my={8}
-        >
-          <Flex direction={{ base: "column", md: "row" }}>
-            <Flex flex={2} display={{ base: "none", md: "block" }} mr={8}>
-              <Image
-                alt={"Sign Up Image"}
-                objectFit={"contain"}
-                src={logo}
-                h="100%"
-              />
-            </Flex>
-            <Stack spacing={4} w={{ base: "full", md: "50%" }}>
-              <Heading fontSize={"2xl"}>Sign in to your account</Heading>
+      <Flex minH={"100vh"} justify="center" align="center" bg="blue.100">
+        <Box maxW={"500px"} w={{ base: "90%", sm: "80%", md: "50%" }} p={4}>
+          <Flex justify="center" mb={8}>
+            <Image
+              alt={"Sign In Image"}
+              objectFit={"contain"}
+              src={logo}
+              h="100px"
+            />
+          </Flex>
+          <Box bg="white" rounded="lg" boxShadow="lg" p={8}>
+            <Stack spacing={4}>
+              <Heading fontSize={{ base: "xl", md: "2xl" }} textAlign="center">
+                Admin Sign In
+              </Heading>
               <FormControl id="email" isRequired>
-                <FormLabel mb={2}>Email address</FormLabel>
+                <FormLabel>Username</FormLabel>
                 <Input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="text"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   size="md"
                 />
               </FormControl>
               <FormControl id="password" isRequired>
-                <FormLabel mb={2}>Password</FormLabel>
+                <FormLabel>Password</FormLabel>
                 <InputGroup>
                   <Input
                     type={showPassword ? "text" : "password"}
@@ -120,15 +110,12 @@ const SignIn = () => {
               >
                 Sign in
               </Button>
-              <Text mt={2} textAlign="center" fontSize="md" color="black.500">
-                Don't have an account? <Link to="/signup">Sign up</Link>
-              </Text>
             </Stack>
-          </Flex>
+          </Box>
         </Box>
       </Flex>
     </>
   );
 };
 
-export default SignIn;
+export default AdminLogin;
