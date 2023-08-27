@@ -18,14 +18,25 @@ export const getData = () => (dispatch) => {
 		});
 };
 
-export const updateData = () => () => {
-	axios.patch();
+export const updateData = (id, data) => (dispatch) => {
+	axios.patch(`http://localhost:8080/books/update/${id}`, data).then((data) => {
+		// console.log("data is deleted.");
+		dispatch(getData());
+	});
 };
 
-export const deleteData = () => () => {
-	axios.delete();
+export const deleteData = (id) => (dispatch) => {
+	console.log(id);
+	axios.delete(`http://localhost:8080/books/delete/${id}`).then((data) => {
+		// console.log("data is deleted.");
+		dispatch(getData());
+	});
 };
 
-export const addData = () => () => {
-	axios.post();
+export const addData = (data) => (dispatch) => {
+	axios.post(`http://localhost:8080/books/add`, data).then((added) => {
+		dispatch(getData());
+	});
 };
+
+

@@ -5,7 +5,7 @@ import "./App.css";
 import SignIn from "./Pages/SignInPage";
 import SignUp from "./Pages/SignUpPage";
 // import Navbar from "./Admin/Pages/Navbar";
-// import MainPageAdimn from "./Pages/MainPageAdimn";
+import MainPageAdimn from "./Pages/MainPageAdimn";
 // import MainRoutes from "./Routes/Routes";
 // import Routes from './Routes/Routes';
 
@@ -13,6 +13,8 @@ function App() {
   return (
     <div>
     {/* <ExpereSolution/> */}
+    {/* hello */}
+    <MainPageAdimn/>
     </div>
   );
 
