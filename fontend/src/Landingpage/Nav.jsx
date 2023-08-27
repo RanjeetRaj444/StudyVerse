@@ -18,11 +18,12 @@ import {
   Image,
   InputGroup,
   Input,
+  Heading
 } from '@chakra-ui/react';
 import UserLogo from "../Components/UserLogo";
 import { HamburgerIcon, CloseIcon, SearchIcon } from '@chakra-ui/icons'; // Changed Search2Icon to SearchIcon
 import { Link } from 'react-router-dom';
-
+import { useSelector, useDispatch } from "react-redux";
 import image from './Logo3.png';
 
 const Links = [
@@ -51,6 +52,7 @@ const NavLink = ({ label, href }) => { // Destructure props
 
 export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const isAuth = useSelector((state) => state.user.isAuth);
 
   return (
     <>
@@ -87,14 +89,18 @@ export default function NavBar() {
           <Box>
             <UserLogo/>
           </Box>
-          <Box gap="10px" display={'flex'} flexDirection={'row'}>
+
+          
+       {!isAuth   &&<Box gap="10px" display={'flex'} flexDirection={'row'}>
             <Button bg="none" border="none">
-              <Link to="/login">Sign in</Link>
+              <Link to="/signin">Sign in</Link>
             </Button>
             <Button bg="#ffdc62">
-              <Link to="/register">Sign Up</Link>
+              <Link to="/signup">Sign Up</Link>
             </Button>
           </Box>
+
+       } 
         </Flex>
 
         {isOpen ? (
