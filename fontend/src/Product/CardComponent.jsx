@@ -1,6 +1,7 @@
 import { Image, Text } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { styled } from 'styled-components'
 
 export const CardComponent = ({image, title, author, description, _id}) => {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -9,9 +10,9 @@ export const CardComponent = ({image, title, author, description, _id}) => {
 
 
   return (
-    <div style={{display: "flex", backgroundColor: "white", padding: "10px"}}>
-                <div style={{width: '15%'}}>
-                  <Image src={image} alt='Dan Abramov' />
+    <DIV style={{display: "flex", backgroundColor: "white", padding: "10px"}}>
+                <div  className='imageDiv'>
+                  <Image src={image} className='imageDiv' alt='Dan Abramov' width={{base: 40,sm:20,md: 20, xl: 20}}/>
                 </div>
 
                 <div style={{ marginLeft: '10px'}}>  
@@ -28,6 +29,26 @@ export const CardComponent = ({image, title, author, description, _id}) => {
                   {description}
                   </Text>
                 </div>
-              </div>
+              </DIV>
   )
 }
+
+const DIV = styled.div`
+
+@media screen and (max-width: 540px) {
+
+  /* .imageDiv{
+    width: 405%;
+  } */
+
+}
+
+@media screen and (max-width: 540px) {
+
+/* .imageDiv{
+  width: 50%;
+} */
+
+}
+  
+`

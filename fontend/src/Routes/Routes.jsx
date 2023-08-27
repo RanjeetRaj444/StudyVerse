@@ -13,10 +13,12 @@ import { PrivateRoute } from "../Components/PrivateRoute";
 import AdminLogin from "../Pages/AdminLogin";
 import Home1 from "../Landingpage/Home1";
 import Afterloginpage from "../Landingpage/Afterloginpage";
+import MainPageAdimn from "../Pages/MainPageAdimn";
 const MainRoutes = () => {
 	return (
 		<DIV>
 			<Routes>
+
 				<Route path="/" element={<Home1/>}/>
 				<Route path="/admin" element={<HomePage />} />
 				<Route path="/admin/books" element={<BooksPage />} />
@@ -26,6 +28,7 @@ const MainRoutes = () => {
 				<Route path="/signin" element={<SignIn />} />
 				<Route path="/adminlogin"element={<AdminLogin/>}/>
 				<Route path="/afterloginhome" element={<PrivateRoute><Afterloginpage/></PrivateRoute>}/>
+				<Route path="/mainAdmin"element={<MainPageAdimn/>}/>
 			</Routes>
 		</DIV>
 	);

@@ -16,6 +16,7 @@ userBooksRouter.get('/singleBook/:id', async(req, res)=>{
     const {id} = req.params;
     console.log(id);
     const _id = id;
+    const title = "Waves and Optics"
     const data = await BookModel.findOne({_id})
     console.log(data);
     res.send(data)
