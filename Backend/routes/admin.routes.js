@@ -9,7 +9,7 @@ const adminRouter=express.Router();
 
 adminRouter.post("/register",async (req,res)=>{
     const {username,email,password,}=req.body;
-    const userExist= await AdminModel.findOne({email});
+    const userExist= await AdminModel.findOne({username});
     if(userExist){
         return res.status(400).send("User already exist, please login")
     }
@@ -25,8 +25,8 @@ adminRouter.post("/register",async (req,res)=>{
 });
 adminRouter.post("/login",async(req,res)=>{
     try {
-        const {email,password}=req.body;
-        const user= await AdminModel.findOne({email});
+        const {username,password}=req.body;
+        const user= await AdminModel.findOne({username});
         if(!user){
             return res.status(400).send("User does not exist, please register")
         }
