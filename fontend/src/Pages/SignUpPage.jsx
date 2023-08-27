@@ -86,7 +86,7 @@ const SignUp = () => {
             <Flex flex={2} display={{ base: "none", md: "block" }} mr={8}>
               <Image
                 alt={"Sign Up Image"}
-                objectFit={"cover"}
+                objectFit={"contain"}
                 src={logo}
                 h="100%"
               />
