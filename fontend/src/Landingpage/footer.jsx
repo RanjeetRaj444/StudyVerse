@@ -5,6 +5,7 @@ import { Heading,Box, Flex, Text, Link, Select, HStack,Image } from '@chakra-ui/
 export default function Footer() {
   return (
     <>
+  
     <Flex w={"100%"}  direction={{ base: 'column', md: 'row' }} margin={"auto"} textAlign={"center"} justifyContent={"space-around"} p={"10px"} bg={"gray.50"}>
         
         <Box spacing={10} justifyContent={"flex-start"}    width={{ base: '100%', md: 'auto' }}>
@@ -69,10 +70,12 @@ export default function Footer() {
             Language
             </Heading>
             <Box display="flex" flexDirection={'column'} textAlign={"left"}>
-            <Select placeholder='Select option'>
-                <option value='option1'>Option 1</option>
-                <option value='option2'>Option 2</option>
-                <option value='option3'>Option 3</option>
+            <Select placeholder='English (USA)'>
+                <option value='option1'>Dectsch</option>
+                <option value='option2'>Franch</option>
+                <option value='option3'>English (UK)</option>
+                <option value='option3'>English (USA)</option>
+
               </Select>
             </Box>
 

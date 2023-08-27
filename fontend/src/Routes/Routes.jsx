@@ -5,10 +5,11 @@ import HomePage from "./../Admin/Pages/HomePage";
 import BooksPage from "./../Admin/Pages/BooksPage";
 import Users from "./../Admin/Pages/Users";
 import styled from "@emotion/styled";
+
 import SignIn from "../Pages/SignInPage";
 import SignUp from "../Pages/SignUpPage";
-import { PrivateRoute } from "../Components/PrivateRoute";
 
+import { PrivateRoute } from "../Components/PrivateRoute";
 const MainRoutes = () => {
 	return (
 		<DIV>
