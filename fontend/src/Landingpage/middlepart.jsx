@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Heading, Image, Text, Flex, Button, VStack, HStack, Spacer } from '@chakra-ui/react';
 
+import Middlepart3 from './middlepart3';
+
 export default function Middlepart() {
   return (
     <>
@@ -96,7 +98,8 @@ export default function Middlepart() {
     </Box>
 
     </Box>
-
+    {/* ----------------------------------------------- */}
+<Middlepart3/>
 
     <Box bg={"#14125c"} w={"100%"} p="10px" display="flex" flexWrap={"wrap"} justifyContent={"space-around"} textAlign={"center"} 
     

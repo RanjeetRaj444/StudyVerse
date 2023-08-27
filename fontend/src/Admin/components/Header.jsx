@@ -7,7 +7,9 @@ import {
 	BsSearch,
 } from "react-icons/bs";
 import DrawerResponsive from "./Drawer";
+
 import InputAdd from "./Input_Add";
+
 function Header({ OpenSidebar }) {
 	return (
 		<header className="header">

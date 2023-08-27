@@ -4,8 +4,7 @@ import React from 'react'
 export default function Middlepart2() {
   return (
     <>
-
-
+     
 
        <Box textAlign="center" p="20px">
        <Heading as='h2' size='xl'>

@@ -28,8 +28,10 @@ export const updateData = (id, data) => (dispatch) => {
 export const deleteData = (id) => (dispatch) => {
 	console.log(id);
 	axios.delete(`http://localhost:8080/books/delete/${id}`).then((data) => {
+
 		// console.log("data is deleted.");
 		dispatch(getData());
+
 	});
 };
 

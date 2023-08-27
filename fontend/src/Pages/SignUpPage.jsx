@@ -19,7 +19,7 @@ import { useDispatch } from "react-redux";
 import { registerUser } from "../Redux/User_Redux/action";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../assets/Logo3.png";
+import logo from "../Assets/Logo3.png";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");
@@ -44,12 +44,12 @@ const SignUp = () => {
     };
 
     try {
-      const response = dispatch(registerUser(userData));
+      const response = await dispatch(registerUser(userData));
       //console.log(response);
       if (response.msg === "User registered") {
         toast.success("Account created successfully");
         setTimeout(() => {
-          // navigate();
+          navigate("/signin");
         }, 2000);
       } else if (response === "User already exists, please login") {
         toast.error("Username already exists, please login");
@@ -86,7 +86,7 @@ const SignUp = () => {
             <Flex flex={2} display={{ base: "none", md: "block" }} mr={8}>
               <Image
                 alt={"Sign Up Image"}
-                objectFit={"cover"}
+                objectFit={"contain"}
                 src={logo}
                 h="100%"
               />
