@@ -3,6 +3,7 @@ import "../Admin/Admin_Style/HomePage.css";
 import MainRoutes from "../Routes/Routes";
 import Header from "../Admin/components/Header";
 import Sidebar from "../Admin/components/Sidebar";
+import AdminRoutes from "../Routes/AdminRoutes";
 const MainPageAdimn = () => {
 	const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
 	const OpenSidebar = () => {
@@ -20,7 +21,7 @@ const MainPageAdimn = () => {
 				{/* <div> */}
 				<Header OpenSidebar={OpenSidebar} />
 				{/* </div> */}
-				<MainRoutes />
+				<AdminRoutes />
 			</div>
 		</div>
 	);
