@@ -60,7 +60,7 @@ export const BooksComponents = () => {
           <Tab value={"Chemistry"} onClick={handleSubjects} >Chemistry</Tab>
           <Tab value={"Calcus"} onClick={handleSubjects}>Calcus</Tab>
           <Tab value={"Engineering"} onClick={handleSubjects}>Engineering</Tab>
-          <Tab value={"Linear Algebra"} onClick={handleSubjects}>Linear Algebra</Tab>
+          <Tab value={"Linear Algebra"} onClick={handleSubjects}>Algebra</Tab>
           <Tab value={"physics"} onClick={handleSubjects}>Physics</Tab>
           <Tab value={"Biology"} onClick={handleSubjects}>Biology</Tab>
           <Tab value={"Languages"} onClick={handleSubjects}>Languages</Tab>
@@ -133,5 +133,18 @@ const DIV = styled.div`
 
 
 }
+
+
+@media screen and (max-width: 890px) {
+      /* Your styles for large devices go here */
+      .chemistry{
+  
+  grid-template-columns: repeat(1, 1fr);
+ 
+
+
+}
+      
+    }
   
 `
