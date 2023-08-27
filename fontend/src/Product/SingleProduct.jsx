@@ -11,7 +11,7 @@ export const SingleProduct = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [data, setData] = useState({})
 
-  const id = "64bcc01032b082bdf7e04018"
+  const id = "64eaf1fad42fd89982374099"
   
 
   const getSingleData = ()=>{
@@ -29,28 +29,30 @@ export const SingleProduct = () => {
     getSingleData()
   }, [])
 
+  console.log(data, "data")
+
   // const id = searchParams.get('id')
   return (
     <div style={{backgroundColor: "#dbdfff99"}}>
-    <DIV style={{border: "2px solid red", width: "80%", margin: "auto"}}>
+    <DIV style={{width: "80%", margin: "auto"}}>
         
-        <div style={{display: "flex", backgroundColor: "white", flexDirection: "row", backgroundColor: "#dbdfff99"}}>
+        <div style={{display: "flex", flexDirection: "row", backgroundColor: "#dbdfff99"}}>
                 <div style={{width: '10%'}}>
-                  <Image src='https://d2nchlq0f2u6vy.cloudfront.net/cache/f0/5b/f05b21063194c1b8a8c430c213bdce16.jpg' alt='Dan Abramov' />
+                  <Image src={data.image} alt='Dan Abramov' />
                 </div>
 
                 <div style={{border: "2px solid green", width: "30%", marginLeft: "10px"}}>  
                   <Text fontSize={{ base: "16px" }} style={{fontWeight: 'bold'}}>
                     
-                    Chemistry: The Central Science
+                    {data.title}
                 
                   </Text>
                   <Text fontSize={{ base: "13px" }}  style={{fontWeight: '500', color: '#928b8b'}}>
-                    14th Edition . ISBN: 9780134414232
+                    Author: {data.author}
                   </Text>
 
                    <Text fontSize={{ base: "13px" }}  style={{fontWeight: '500', color: '#928b8b'}}>
-                   Bruce Edward Bursten, Catherine J. Murphy, H. Eugene Lemay, Matthew E. Stoltzfus, Patrick Woodward, Theodore E. Brown
+                  {data.description}
                   </Text>
                 </div>
           </div>
@@ -60,7 +62,7 @@ export const SingleProduct = () => {
             Textbook solutions
           </Text>
 
-          <Exercise />
+          <Exercise exercise = {data.exercise} chapter={data.chapter} solution={data.solution} />
           </div>
 
 

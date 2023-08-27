@@ -19,9 +19,9 @@ function App() {
   return (
     <div>
 
-    {/* <ExpereSolution/> */}
+    <ExpereSolution/>
 
-    <SingleProduct />
+    {/* <SingleProduct /> */}
 
     </div>
   );
