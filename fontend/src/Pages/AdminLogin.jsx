@@ -27,7 +27,7 @@ const AdminLogin = () => {
 
   const handleSignIn = async () => {
     try {
-      const response = await axios.post("http://localhost:8080/admin/login", {
+      const response = await axios.post("https://studyverse-drgj.onrender.com/admin/login", {
         username,
         password,
       });
@@ -36,7 +36,7 @@ const AdminLogin = () => {
         case "User logedin":
           toast.success("Signed in successfully");
           setTimeout(() => {
-            navigate("/admin");
+            navigate("/mainAdmin");
           }, 2000);
           break;
         case "Inccorect password":
@@ -60,7 +60,7 @@ const AdminLogin = () => {
   return (
     <>
       <ToastContainer />
-      <Flex minH={"100vh"} justify="center" align="center" bg="yellow.200">
+      <Flex minH={"100vh"} justify="center" align="center" bg="blue.100">
         <Box maxW={"500px"} w={{ base: "90%", sm: "80%", md: "50%" }} p={4}>
           <Flex justify="center" mb={8}>
             <Image
