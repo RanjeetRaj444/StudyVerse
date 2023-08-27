@@ -18,10 +18,12 @@ const MainPageAdimn = () => {
 				/>
 			</div>
 			<div className="bodyContainer">
-				{/* <div> */}
+
 				<Header OpenSidebar={OpenSidebar} />
-				{/* </div> */}
-				<AdminRoutes />
+
+
+				<MainRoutes />
+
 			</div>
 		</div>
 	);

@@ -7,9 +7,9 @@ import { Image } from "@chakra-ui/react";
 import logo from "../assests/Logo3.png";
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
 	return (
-		<aside
+		<div
 			id="sidebar"
-			className={openSidebarToggle ? "sidebar-responsive" : ""}
+			// className={openSidebarToggle ? "sidebar-responsive" : ""}
 		>
 			<div className="sidebar-title">
 				<div className="sidebar-brand">
@@ -35,7 +35,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 					<Link to={"/admin/profile"}>Profile</Link>
 				</li>
 			</ul>
-		</aside>
+		</div>
 	);
 }
 

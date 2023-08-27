@@ -7,28 +7,36 @@ const jwt = require("jsonwebtoken");
 const userRouter = express.Router();
 
 userRouter.post("/register", async (req, res) => {
-  try {
-    const { username, email, password } = req.body;
-    const userExist = await UserModel.findOne({ email });
-    if (userExist) {
-      return res.status(400).json({ msg: "User already exists, please login" });
-    } else {
-      bcrypt.hash(password, 5, async function (error, hash) {
-        if (error) {
-          return res.status(500).json({ msg: "Internal server error" });
-        }
-        const user = new UserModel({
-          username,
-          email,
-          password: hash,
-        });
-        await user.save();
-        res.status(200).json({ msg: "User registered" });
-      });
-    }
-  } catch (error) {
-    res.status(500).json({ msg: "Internal server error" });
-  }
+	try {
+		const { username, email, password } = req.body;
+		const userExist = await UserModel.findOne({ email });
+		if (userExist) {
+			return res.status(400).json({ msg: "User already exists, please login" });
+		} else {
+			bcrypt.hash(password, 5, async function (error, hash) {
+				if (error) {
+					return res.status(500).json({ msg: "Internal server error" });
+				}
+				const user = new UserModel({
+					username,
+					email,
+					password: hash,
+				});
+				await user.save();
+				res.status(200).json({ msg: "User registered" });
+			});
+		}
+	} catch (error) {
+		res.status(500).json({ msg: "Internal server error" });
+	}
+});
+userRouter.get("/getUsers", async (req, res) => {
+	try {
+		const user = await UserModel.find();
+		res.status(200).send({ data: user });
+	} catch (error) {
+		res.status(500).json({ msg: "Internal server error" });
+	}
 });
 
 userRouter.post("/login", async (req, res) => {
@@ -62,23 +70,23 @@ userRouter.post("/login", async (req, res) => {
 });
 
 userRouter.post("/logout", async (req, res) => {
-  try {
-    const token = req.header("Authorization");
-    jwt.verify(token, process.env.KEY, async (error, decode) => {
-      if (error) {
-        return res.status(400).json({ msg: "Invalid token" });
-      }
-      const isBlacklisted = await BlacklistedModel.findOne({ token });
-      if (isBlacklisted) {
-        return res.status(400).json({ msg: "Token blacklisted, login again" });
-      } else {
-        await BlacklistedModel.create({ token });
-        return res.status(200).json({ msg: "Logged out" });
-      }
-    });
-  } catch (error) {
-    res.status(500).json({ msg: "Internal server error" });
-  }
+	try {
+		const token = req.header("Authorization");
+		jwt.verify(token, process.env.KEY, async (error, decode) => {
+			if (error) {
+				return res.status(400).json({ msg: "Invalid token" });
+			}
+			const isBlacklisted = await BlacklistedModel.findOne({ token });
+			if (isBlacklisted) {
+				return res.status(400).json({ msg: "Token blacklisted, login again" });
+			} else {
+				await BlacklistedModel.create({ token });
+				return res.status(200).json({ msg: "Logged out" });
+			}
+		});
+	} catch (error) {
+		res.status(500).json({ msg: "Internal server error" });
+	}
 });
 
 module.exports = userRouter;

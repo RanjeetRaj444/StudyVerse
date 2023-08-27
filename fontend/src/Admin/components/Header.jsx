@@ -1,14 +1,14 @@
 import React from "react";
 import "../Admin_Style/Header.css";
 import {
-	// import Header from './Header';
 	BsFillBellFill,
 	BsFillEnvelopeFill,
 	BsPersonCircle,
 	BsSearch,
-	BsJustify,
 } from "react-icons/bs";
 import DrawerResponsive from "./Drawer";
+
+import InputAdd from "./Input_Add";
 
 function Header({ OpenSidebar }) {
 	return (
@@ -21,6 +21,7 @@ function Header({ OpenSidebar }) {
 				<BsSearch className="icon" />
 			</div>
 			<div className="header_right">
+				<InputAdd/>
 				<BsFillBellFill className="icon" />
 				<BsFillEnvelopeFill className="icon" />
 				<BsPersonCircle className="icon" />

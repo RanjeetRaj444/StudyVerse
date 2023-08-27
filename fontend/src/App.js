@@ -8,13 +8,15 @@ import { AddIcon } from "@chakra-ui/icons";
 import AdminLogin from "./Pages/AdminLogin";
 import MainRoutes from "./Routes/Routes";
 // import Navbar from "./Admin/Pages/Navbar";
-// import MainPageAdimn from "./Pages/MainPageAdimn";
+import MainPageAdimn from "./Pages/MainPageAdimn";
 // import MainRoutes from "./Routes/Routes";
 // import Routes from './Routes/Routes';
 function App() {
   return (
     <div>
     {/* <ExpereSolution/> */}
+    {/* hello */}
+    <MainPageAdimn/>
     </div>
   );
 

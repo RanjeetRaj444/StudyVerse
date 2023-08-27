@@ -1,17 +1,16 @@
 import React from "react";
 import "../Admin_Style/Book_Card.css";
 import { Button, Image, Text } from "@chakra-ui/react";
-import { BooksCard } from "./../../Components/BooksCard";
+
 import InputEdit from "./Input_Edit";
 import { useDispatch } from "react-redux";
-import { deleteData, getData } from "../../Redux/Admin_Redux/action";
+import { deleteData } from "../../Redux/Admin_Redux/action";
+
 function BookCard({ ele }) {
-	// console.log(ele);
 	const dispatch = useDispatch();
 	function handleDelete() {
-		// console.log(ele._id);
 		dispatch(deleteData(ele._id));
-		// dispatch(getData());
+
 	}
 	return (
 		<div className="booksCard">

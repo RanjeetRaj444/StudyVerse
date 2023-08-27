@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+
+// import { styled } from '@emotion/styled';
+import { styled } from "styled-components";
+
 import {
 	Modal,
 	ModalOverlay,
@@ -11,14 +15,25 @@ import {
 	Button,
 	Input,
 	Textarea,
+	Select,
 } from "@chakra-ui/react";
+import { useDispatch } from "react-redux";
+import { updateData } from "../../Redux/Admin_Redux/action";
 const InputEdit = ({ ele }) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const [data, setData] = useState({});
+	const dispatch = useDispatch();
+
 	function handleClick() {
 		onOpen();
 		setData(ele);
 	}
+
+	function handleSubmit(e) {
+		e.preventDefault();
+		dispatch(updateData(ele._id, data));
+	}
+
 	function handleChange(e) {
 		setData({ ...data, [e.target.name]: e.target.value });
 	}
@@ -29,10 +44,13 @@ const InputEdit = ({ ele }) => {
 			<Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
 				<ModalContent>
-					<ModalHeader>Create your account</ModalHeader>
+
+					<ModalHeader>Edit Data</ModalHeader>
 					<ModalCloseButton />
 					<ModalBody pb={6}>
-						<form action="">
+						<DIV onSubmit={handleSubmit} action="">
+							<lebale>Image Link</lebale>
+
 							<Input
 								type="text"
 								name="image"
@@ -40,6 +58,9 @@ const InputEdit = ({ ele }) => {
 								onChange={handleChange}
 								value={data.image}
 							/>
+
+							<lebale>Title</lebale>
+
 							<Input
 								type="text"
 								name="title"
@@ -47,6 +68,9 @@ const InputEdit = ({ ele }) => {
 								onChange={handleChange}
 								value={data.title}
 							/>
+
+							<lebale>Solution</lebale>
+
 							<Input
 								type="text"
 								name="solution"
@@ -54,6 +78,9 @@ const InputEdit = ({ ele }) => {
 								onChange={handleChange}
 								value={data.solution}
 							/>
+
+							<lebale>Description</lebale>
+
 							<Textarea
 								type="text"
 								name="description"
@@ -61,6 +88,9 @@ const InputEdit = ({ ele }) => {
 								onChange={handleChange}
 								value={data.description}
 							/>
+
+							<lebale>Author</lebale>
+
 							<Input
 								type="text"
 								name="author"
@@ -68,7 +98,10 @@ const InputEdit = ({ ele }) => {
 								onChange={handleChange}
 								value={data.author}
 							/>
-							<select onChange={handleChange} name="category" id="">
+
+							<lebale>Category</lebale>
+							<Select onChange={handleChange} name="category" id="">
+
 								<option value={data.category}>{data.category}</option>
 								<option value="Business">Business</option>
 								<option value="Languages">Languages</option>
@@ -78,8 +111,10 @@ const InputEdit = ({ ele }) => {
 								<option value="Engineering">Engineering</option>
 								<option value="Calculus">Calculus</option>
 								<option value="Chemistry">Chemistry</option>
-							</select>
-						</form>
+
+							</Select>
+						</DIV>
+
 					</ModalBody>
 					<ModalFooter>
 						<Button colorScheme="blue" mr={3}>
@@ -92,6 +127,13 @@ const InputEdit = ({ ele }) => {
 		</>
 	);
 };
+
+
+const DIV = styled.form`
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+`;
 
 export default InputEdit;
 
