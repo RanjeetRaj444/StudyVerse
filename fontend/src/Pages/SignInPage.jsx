@@ -39,8 +39,9 @@ const SignIn = () => {
       switch (response) {
         case "User logged in":
           toast.success("Signed in successfully");
+          
           setTimeout(() => {
-            navigate(pathComingFrom, { replace: true });
+            navigate("/afterloginhome");
           }, 2000);
           break;
         case "Incorrect password":

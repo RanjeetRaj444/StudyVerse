@@ -9,11 +9,11 @@ import Afterloginpage from './Afterloginpage'
 export default function Home1() {
   return (
     <div>
-    {/* <NavBar/>
+    <NavBar/>
     <Middlepart/>
     <Middlepart2/>
-    <Footer/> */}
-    <Afterloginpage/>
+    <Footer/>
+    {/* <Afterloginpage/> */}
 
     </div>
   )

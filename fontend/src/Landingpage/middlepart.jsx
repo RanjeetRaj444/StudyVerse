@@ -22,13 +22,15 @@ export default function Middlepart() {
         borderRadius="md"
         w={{ base: '100%', md: '40%' }} // Adjust the width for responsiveness
       >
-        <Heading as='h5' size='md' marginBottom={"5px"}>
-          Experience a new era of AI-enhanced learning
-        </Heading>
-        <Text marginBottom={"5px"}>
-          Quizlet is more than flashcards: it’s the #1 global learning platform. Join our community of 300 million learners using Quizlet’s practice tests, Expert Solutions and AI-powered tools to improve their grades and reach their goals.
-        </Text>
-        <Button>Sign up now</Button>
+         <Box textAlign="center" padding="20px">
+      <Heading as="h5" size="md" marginBottom="5px">
+        Experience a new era of AI-enhanced learning
+      </Heading>
+      <Text fontSize={{ base: "1rem", md: "1.2rem", lg: "1.5rem" }} marginBottom="5px">
+        Quizlet is more than flashcards: it’s the #1 global learning platform. Join our community of 300 million learners using Quizlet’s practice tests, Expert Solutions and AI-powered tools to improve their grades and reach their goals.
+      </Text>
+      <Button fontSize={{ base: "1rem", md: "1.2rem", lg: "1.5rem" }}>Sign up now</Button>
+    </Box>
       </Box>
 
       {/* Image */}
