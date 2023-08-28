@@ -1,27 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
-// import { ExpereSolution } from "./Parmeshwar/ExpereSolution";
-import SignIn from './Pages/SignInPage';
-import SignUp from './Pages/SignUpPage';
-import { SingleProduct } from './Product/SingleProduct';
+import SignIn from "./Pages/SignInPage";
+import SignUp from "./Pages/SignUpPage";
+import { SingleProduct } from "./Product/SingleProduct";
 import { AddIcon } from "@chakra-ui/icons";
 import AdminLogin from "./Pages/AdminLogin";
 import MainRoutes from "./Routes/Routes";
-// import Navbar from "./Admin/Pages/Navbar";
 import MainPageAdimn from "./Pages/MainPageAdimn";
+import { useSelector } from "react-redux";
 function App() {
-  return (
-    <div>
-    {/* <ExpereSolution/> */}
-    {/* hello */}
+	const isAuth = useSelector((state) => state.user.isAuth);
+	return (
+		<div>
+		<MainRoutes />
 
-    {/* <MainPageAdimn/> */}
-    <MainRoutes/>
-
- 
-    </div>
-  );
-
-};
+		</div>
+	);
+}
 
 export default App;
