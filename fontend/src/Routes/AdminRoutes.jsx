@@ -10,7 +10,7 @@ const AdminRoutes = () => {
 	return (
 		<DIV>
 			<Routes>
-				<Route path="/admin" element={<HomePage />} />
+				<Route path="/" element={<HomePage />} />
 				<Route path="/admin/books" element={<BooksPage />} />
 				<Route path="/admin/users" element={<Users />} />
 				<Route path="/admin/profile" element={<Users />} />

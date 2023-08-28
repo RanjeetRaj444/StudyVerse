@@ -16,7 +16,7 @@ export const SingleProduct = () => {
 
 	const getSingleData = () => {
 		axios
-			.get(`http://localhost:8080/subjects/singleBook/${id}`)
+			.get(`https://studyverse-drgj.onrender.com/subjects/singleBook/${id}`)
 			.then((res) => {
 				console.log(res);
 				setData(res.data);

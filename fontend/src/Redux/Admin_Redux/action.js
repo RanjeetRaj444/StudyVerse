@@ -8,7 +8,7 @@ import {
 export const getData = () => (dispatch) => {
 	dispatch({ type: BOOKS_GET_REQUEST_ADMIN });
 	axios
-		.get("http://localhost:8080/books")
+		.get("https://studyverse-drgj.onrender.com/books")
 		.then((data) => {
 			// console.log(data);
 			dispatch({ type: BOOKS_GET_SUCCESS_ADMIN, payload: data.data });
@@ -19,7 +19,7 @@ export const getData = () => (dispatch) => {
 };
 
 export const updateData = (id, data) => (dispatch) => {
-	axios.patch(`http://localhost:8080/books/update/${id}`, data).then((data) => {
+	axios.patch(`https://studyverse-drgj.onrender.com/books/update/${id}`, data).then((data) => {
 		// console.log("data is deleted.");
 		dispatch(getData());
 	});
@@ -27,7 +27,7 @@ export const updateData = (id, data) => (dispatch) => {
 
 export const deleteData = (id) => (dispatch) => {
 	console.log(id);
-	axios.delete(`http://localhost:8080/books/delete/${id}`).then((data) => {
+	axios.delete(`https://studyverse-drgj.onrender.com/books/delete/${id}`).then((data) => {
 
 		// console.log("data is deleted.");
 		dispatch(getData());
@@ -36,7 +36,7 @@ export const deleteData = (id) => (dispatch) => {
 };
 
 export const addData = (data) => (dispatch) => {
-	axios.post(`http://localhost:8080/books/add`, data).then((added) => {
+	axios.post(`https://studyverse-drgj.onrender.com/books/add`, data).then((added) => {
 		dispatch(getData());
 	});
 };

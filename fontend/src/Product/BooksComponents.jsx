@@ -29,7 +29,7 @@ export const BooksComponents = () => {
 
 
   const getCategoryData = () => {
-    axios.get(`http://localhost:8080/subjects/book?value=${initialSubjects}`)
+    axios.get(`https://studyverse-drgj.onrender.com/subjects/book?value=${initialSubjects}`)
       .then((res) => {
         console.log(res);
         setData(res.data)

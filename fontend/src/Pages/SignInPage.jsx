@@ -25,10 +25,8 @@ const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const location = useLocation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const pathComingFrom = location.state?.from?.pathname || "/";
 
   const handleSignIn = async () => {
     const credentials = { email, password };
@@ -42,7 +40,7 @@ const SignIn = () => {
           
           setTimeout(() => {
             navigate("/afterloginhome");
-          }, 2000);
+          }, 1000);
           break;
         case "Incorrect password":
           toast.error("Incorrect password");
