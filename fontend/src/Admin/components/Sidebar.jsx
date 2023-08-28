@@ -20,7 +20,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 			<ul className="sidebar-list">
 				<li className="sidebar-list-item">
 					{<GiHomeGarage />}
-					<Link to={"/admin"}>Home</Link>
+					<Link to={"/"}>Home</Link>
 				</li>
 				<li className="sidebar-list-item">
 					{<GiBookshelf />}

@@ -8,7 +8,7 @@ const Users = () => {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8080/user/getUsers")
+			.get("https://studyverse-drgj.onrender.com/user/getUsers")
 			.then((data) => {
 				setUserData(data.data.data);
 			})

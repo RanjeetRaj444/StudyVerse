@@ -17,7 +17,7 @@ import {
   FiArrowUpCircle,
 } from "react-icons/fi";
 import { logoutUser } from "../Redux/User_Redux/action";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SignIn from "../Pages/SignInPage";
 import SignUp from "../Pages/SignUpPage";
 
@@ -28,8 +28,10 @@ const UserLogo = () => {
   const email = useSelector((state) => state.user.email);
   const [showSignIn, setShowSignIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+  const navigate = useNavigate();
   const handleLogout = () => {
     dispatch(logoutUser());
+    navigate("/")
   };
   console.log(isAuth, username, email);
   return (
