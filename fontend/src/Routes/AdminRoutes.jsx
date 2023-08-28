@@ -6,16 +6,14 @@ import BooksPage from "./../Admin/Pages/BooksPage";
 import Users from "./../Admin/Pages/Users";
 import styled from "@emotion/styled";
 
-
 const AdminRoutes = () => {
 	return (
 		<DIV>
 			<Routes>
-			    <Route path="/admin" element={<HomePage />} />
+				<Route path="/admin" element={<HomePage />} />
 				<Route path="/admin/books" element={<BooksPage />} />
 				<Route path="/admin/users" element={<Users />} />
 				<Route path="/admin/profile" element={<Users />} />
-
 			</Routes>
 		</DIV>
 	);

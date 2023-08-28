@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Admin/Admin_Style/HomePage.css";
-import MainRoutes from "../Routes/Routes";
 import Header from "../Admin/components/Header";
 import Sidebar from "../Admin/components/Sidebar";
 import AdminRoutes from "../Routes/AdminRoutes";
@@ -18,12 +17,8 @@ const MainPageAdimn = () => {
 				/>
 			</div>
 			<div className="bodyContainer">
-
 				<Header OpenSidebar={OpenSidebar} />
-
-
-				<MainRoutes />
-
+				<AdminRoutes />
 			</div>
 		</div>
 	);
