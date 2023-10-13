@@ -37,15 +37,6 @@ export const Review = ({ image, heading, text }) => {
                     >
                         {text}
                     </Text>
-
-
-
-                    {/* {appleStore === "" && <div style={{ display: "flex" }}>
-                        <Image style={{ width: '15%' }} src={appleStore} alt='Apple Store' />
-                        <Image style={{ width: '15%' }} src={googlePlay} alt='Google Play' />
-                    </div>
-                    } */}
-
                 </Box>
             </Box>
         </DIV>

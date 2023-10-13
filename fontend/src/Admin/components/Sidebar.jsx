@@ -20,19 +20,19 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 			<ul className="sidebar-list">
 				<li className="sidebar-list-item">
 					{<GiHomeGarage />}
-					<Link to={"/"}>Home</Link>
+					<Link to={"*"}>Home</Link>
 				</li>
 				<li className="sidebar-list-item">
 					{<GiBookshelf />}
-					<Link to={"/admin/books"}>Books</Link>
+					<Link to={"*/mainAdmin/books"}>Books</Link>
 				</li>
 				<li className="sidebar-list-item">
 					{<FaUsersCog />}
-					<Link to={"/admin/users"}>Users</Link>
+					<Link to={"*/mainAdmin/users"}>Users</Link>
 				</li>
 				<li className="sidebar-list-item">
 					{<FaUserAlt />}
-					<Link to={"/admin/profile"}>Profile</Link>
+					<Link to={"*/mainAdmin/profile"}>Profile</Link>
 				</li>
 			</ul>
 		</div>

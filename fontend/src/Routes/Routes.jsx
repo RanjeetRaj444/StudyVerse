@@ -27,7 +27,7 @@ const MainRoutes = () => {
 						</PrivateRoute>
 					}
 				/>
-				<Route path="/mainAdmin" element={<MainPageAdimn />} />
+				<Route path="/mainAdmin/*" element={<MainPageAdimn />} />
 				<Route
 					path="/book/:id"
 					element={
