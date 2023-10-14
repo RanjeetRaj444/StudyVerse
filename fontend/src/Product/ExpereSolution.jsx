@@ -15,14 +15,15 @@ export const ExpereSolution = () => {
 			<NavBar />
 			<div>
 				<div className="topSection">
-					<div style={{ position: "relative" }}>
-						<Box>
+					<div style={{ position: "relative",width:"100%" }}>
+						<div>
 							<Image
+							style={{width:"100%"}}
 								className="backImage"
 								src="https://quizlet.com/_next/static/media/landing-page-header-jagged-lines-day.ea330eb6.svg"
 								alt="Dan Abramov"
 							/>
-						</Box>
+						</div>
 						<Text className="heading">
 							Find free textbook solutions you can trust
 						</Text>
@@ -76,17 +77,6 @@ export const ExpereSolution = () => {
 							</div>
 						</div>
 					</div>
-					{/* 
-					<div style={{ width: "80%", margin: "auto" }}>
-						<input
-							type="text"
-							placeholder="Search textbooks, ISBNs, questions"
-							className="searchBar"
-						/>
-					</div> */}
-
-					{/* Books Components */}
-
 					<div style={{ width: "80%", margin: "auto" }}>
 						<BooksComponents />
 					</div>
@@ -165,6 +155,7 @@ const DIV = styled.div`
 	.topSection {
 		position: relative;
 		background-color: #dbdfff99;
+		width: 100%;
 	}
 
 	.heading {

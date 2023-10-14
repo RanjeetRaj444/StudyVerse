@@ -13,8 +13,8 @@ export default function Footer() {
             About us
             </Heading>
             <Box  display="flex" flexDirection={'column'}  textAlign={"left"}>
-            <Link fontSize='md' marginBottom={"20px"}>About Quizlet</Link>
-            <Link fontSize='md' marginBottom={"20px"}>How Quizlet works</Link>
+            <Link fontSize='md' marginBottom={"20px"}>About StudyBuddy</Link>
+            <Link fontSize='md' marginBottom={"20px"}>How StudyBuddy works</Link>
             <Link fontSize='md' marginBottom={"20px"}>Careers</Link>
             <Link fontSize='md'marginBottom={"20px"}>Advertise with us</Link>
             <Link fontSize='md'marginBottom={"20px"}>Get the app</Link>
@@ -33,7 +33,7 @@ export default function Footer() {
             <Link fontSize='md'marginBottom={"20px"}>Q-Chat</Link>
             <Link fontSize='md'marginBottom={"20px"}> Spaced Repetition</Link>
             <Link fontSize='md'marginBottom={"20px"}> Modern Learning Lab</Link>
-            <Link fontSize='md'marginBottom={"20px"}>Quizlet Plus</Link>
+            <Link fontSize='md'marginBottom={"20px"}>StudyBuddy Plus</Link>
             </Box>
 
         </Box>
@@ -46,7 +46,7 @@ export default function Footer() {
             <Link fontSize='md' marginBottom={"20px"}>CheckPoint</Link>
             <Link fontSize='md' marginBottom={"20px"}>Blog</Link>
             <Link fontSize='md'marginBottom={"20px"}>Be the Change</Link>
-            <Link fontSize='md'marginBottom={"20px"}>Quizlet Plus for teachers</Link>
+            <Link fontSize='md'marginBottom={"20px"}>StudyBuddy Plus for teachers</Link>
             </Box>
 
         </Box>
@@ -129,7 +129,7 @@ export default function Footer() {
         icon={<FaYoutube />}
       />
     </Flex>
-        <Heading as='h4' size='md'> © 2023 Quizlet, Inc.</Heading>
+        <Heading as='h4' size='md'> © 2023 StudyBuddy, Inc.</Heading>
       </Box>
       <Box >
         <Image  src="https://quizlet.com/cdn-cgi/image/f=auto,fit=cover,h=70,onerror=redirect,w=140/https://assets.quizlet.com/_next/static/media/coppa-seal.0efe00c1.png" alt=""

@@ -4,29 +4,16 @@ import Footer from "./footer";
 import { Link } from "react-router-dom";
 import { Heading } from "@chakra-ui/react";
 import NavBar from "./Nav";
+import { styled } from "styled-components";
 
 export default function Afterloginpage() {
 	return (
 		<div>
 			<NavBar />
-			<Heading p={"10px"} size={"lg"}>
-				Recommended Expert Solutions
-			</Heading>
+			<HEADING>Recommended Expert Solutions</HEADING>
 			<div style={{ backgroundColor: "", padding: "25px" }}>
-				<div
-					style={{
-						display: "flex",
-						width: "80%",
-						borderRadius: "10px",
-					}}
-				>
-					{/* Repeat the following set of elements as needed for each book */}
-					<div
-						style={{
-							display: "flex",
-							boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
-						}}
-					>
+				<DIV>
+					<div className="booksContainer_">
 						<div style={{ padding: "10px", width: "45%", display: "flex" }}>
 							<Link to="/book">
 								<img
@@ -43,12 +30,7 @@ export default function Afterloginpage() {
 							<p>8,886 solutions</p>
 						</div>
 					</div>
-					<div
-						style={{
-							display: "flex",
-							boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
-						}}
-					>
+					<div className="booksContainer_">
 						<div style={{ padding: "10px", width: "45%", display: "flex" }}>
 							<Link to="/book">
 								<img
@@ -65,12 +47,7 @@ export default function Afterloginpage() {
 							<p>1,783 solutions</p>
 						</div>
 					</div>
-					<div
-						style={{
-							display: "flex",
-							boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
-						}}
-					>
+					<div className="booksContainer_">
 						<div style={{ padding: "10px", width: "45%", display: "flex" }}>
 							<Link to="/book">
 								<img
@@ -89,15 +66,57 @@ export default function Afterloginpage() {
 					</div>
 
 					{/* Repeat more book elements here */}
-				</div>
+				</DIV>
 			</div>
 			<Footer />
 		</div>
 	);
 }
 // import data from "./data.json"
-// <div>
+
+{
+	/* <div> */
+}
 // {data?.map((e)=>(
 //   <div key={"e._id"}>{e.image} </div>
 // ))}
 // </div>
+
+const DIV = styled.div`
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 1rem;
+	width: 80%;
+	border-radius: 10px;
+	/* margin: auto; */
+	.booksContainer_ {
+		display: flex;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	}
+	@media only screen and (max-width: 1000px) {
+		.booksContainer_ {
+			flex-direction: column;
+			/* display: none; */
+			align-items: center;
+		}
+		grid-template-columns: auto auto;
+		justify-content: center;
+	}
+	@media only screen and (max-width: 550px) {
+		justify-content: center;
+		grid-template-columns: auto;
+	}
+`;
+
+const HEADING = styled.h2`
+	/* color: red; */
+	font-size: 2rem;
+	font-weight: bolder;
+	width: 80%;
+	@media only screen and (max-width: 1000px) {
+		/* color: red; */
+		display: flex;
+		align-items: center;
+		margin: auto;
+	}
+`;
