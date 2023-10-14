@@ -11,7 +11,7 @@ import {
 import "../Admin_Style/Sidebar.css";
 import React from "react";
 import { BsJustify } from "react-icons/bs";
-import logo from "../assests/Logo3.png";
+import logo from "../../Assets/Logo3.png";
 import { FaUsersCog, FaUserAlt } from "react-icons/fa";
 import { GiBookshelf, GiHomeGarage } from "react-icons/gi";
 import { Link } from "react-router-dom";

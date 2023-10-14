@@ -1,7 +1,7 @@
 import { Button, Image, Text } from "@chakra-ui/react";
 import "../Admin_Style/User_Card.css";
 import React from "react";
-import profile from "../assests/profile.png";
+import profile from "../../Assets/profile.png";
 // import User_Card from "./User_Card";
 const UserCard = ({ ele }) => {
 	return (

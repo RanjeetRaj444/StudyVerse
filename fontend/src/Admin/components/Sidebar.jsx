@@ -4,7 +4,7 @@ import { FaUsersCog, FaUserAlt } from "react-icons/fa";
 import { GiBookshelf, GiHomeGarage } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { Image } from "@chakra-ui/react";
-import logo from "../assests/Logo3.png";
+import logo from "../../Assets/Logo3.png";
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
 	return (
 		<div

@@ -111,7 +111,7 @@ export default function Middlepart3() {
           </Heading>
           <Text fontSize='lg' mb={"25px"}>
 
-          Quizlet’s Expert Solutions combine millions of verified explanations with AI-powered tutoring so you can tackle homework assignments.
+          StudyBuddy's Expert Solutions combine millions of verified explanations with AI-powered tutoring so you can tackle homework assignments.
           </Text>
           <Button mb={"25px"} w={"200px"} h="50px" bg={"#2550d5"} color={"white"}>
             Find your textbook
@@ -167,9 +167,6 @@ export default function Middlepart3() {
             Get started
           </Button>
         </Box>
-
-     
-
       </Flex>
     </Box>
     </>

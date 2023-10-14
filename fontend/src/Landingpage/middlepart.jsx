@@ -27,7 +27,7 @@ export default function Middlepart() {
         Experience a new era of AI-enhanced learning
       </Heading>
       <Text fontSize={{ base: "1rem", md: "1.2rem", lg: "1.5rem" }} marginBottom="5px">
-        Quizlet is more than flashcards: it’s the #1 global learning platform. Join our community of 300 million learners using Quizlet’s practice tests, Expert Solutions and AI-powered tools to improve their grades and reach their goals.
+        StudyBuddy is more than flashcards: it’s the #1 global learning platform. Join our community of 300 million learners using StudyBuddy's practice tests, Expert Solutions and AI-powered tools to improve their grades and reach their goals.
       </Text>
       <Button fontSize={{ base: "1rem", md: "1.2rem", lg: "1.5rem" }}>Sign up now</Button>
     </Box>
@@ -40,8 +40,6 @@ export default function Middlepart() {
         w="100%"
       />
     </Box>
-
-    {/* mp2 */}
 <Box>
     <Box bg="#edeff4" w={"100%"} m="auto">
       
@@ -108,12 +106,12 @@ export default function Middlepart() {
     >
         <Flex width={"80%"}  textAlign={"left"}  >
             <Box color={"white"} >
-                <Text>QUIZLET pLUS</Text>
+                <Text>StudyBuddy Plus</Text>
                 <Heading as='h2' size='xl' marginBottom={"50px"}>
                 Get better grades with the #1 learning platform  
                 </Heading>
             
-                <Text fontSize='xl' marginBottom={"50px"}>Discover deeper learning with Quizlet Plus</Text>
+                <Text fontSize='xl' marginBottom={"50px"}>Discover deeper learning with StudyBuddy Plus</Text>
                 <VStack>
                     <HStack >
                         <Image marginBottom={"25px"} src='https://quizlet-web.cdn.prismic.io/quizlet-web/1691184595216_MagicNotes.svg' alt=''/>
@@ -157,7 +155,7 @@ export default function Middlepart() {
                     </HStack>
 
                 </VStack>
-                <Button marginBottom={"50px"}>Get the Best of Quizlet</Button>
+                <Button marginBottom={"50px"}>Get the Best of StudyBuddy</Button>
 
             </Box>
             <Box maxWidth={"100%"}>
@@ -172,8 +170,8 @@ export default function Middlepart() {
         transform="translate(-50%, -50%)"  >
       
   <Heading as='h2' size='xl' color={"white"}>
-  94% of students who use Learn or Test mode say that Quizlet helps them get better grades*  </Heading>
-  <Text size='xl' color={"white"}>*381 Quizlet users were surveyed in Dec. 2021</Text>
+  94% of students who use Learn or Test mode say that StudyBuddy helps them get better grades*  </Heading>
+  <Text size='xl' color={"white"}>*381 StudyBuddy users were surveyed in Dec. 2021</Text>
             </Box>
             <Image src="https://images.prismic.io/quizlet-web/cb385b68-11ca-4653-9f6d-a5c1a463903f_09+Testimonial+BG+%281%29.png?auto=format,compress" alt=""/>
         </Box>
@@ -204,13 +202,13 @@ export default function Middlepart() {
           </Heading>
           <Text fontSize='lg' mb={"25px"}>
             Help every student confidently learn anything. With free study sets,
-            study modes, and in-class games like Quizlet Live, you can instantly
+            study modes, and in-class games like StudyBuddy Live, you can instantly
             create a more engaged classroom. Students and teachers can sign up
             and study for free.
           </Text>
           <Button mb={"25px"} bg={"#2550d5"} color={"white"}>Sign up for free</Button>
           <Heading as='h3' size='md'color={"#2550d5"} >
-       See how teachers use Quizlet
+       See how teachers use StudyBuddy
           </Heading>
         </Box>
         <Box w={{ base: '100%', md: '40%' }}>
